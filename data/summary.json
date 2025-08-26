@@ -1,0 +1,1186 @@
+{
+  "per_season": {
+    "2025": {
+      "head_to_head": {
+        "K309h": {
+          "jacross2000": 2,
+          "Leviathan35": 2,
+          "Franc19": 2,
+          "leejsv": 2,
+          "mavbenson": 2,
+          "StatutoryRaitests": 2,
+          "naveb": 2,
+          "nlredfern": 2,
+          "Tedwood": 1
+        },
+        "naveb": {
+          "StatutoryRaitests": 2,
+          "mavbenson": 2,
+          "Tedwood": 2,
+          "jacross2000": 2,
+          "leejsv": 2,
+          "nlredfern": 2,
+          "Franc19": 2,
+          "Leviathan35": 1
+        },
+        "mavbenson": {
+          "leejsv": 2,
+          "nlredfern": 2,
+          "StatutoryRaitests": 2,
+          "Franc19": 2,
+          "Leviathan35": 2,
+          "Tedwood": 2
+        },
+        "Leviathan35": {
+          "Franc19": 2,
+          "nlredfern": 2,
+          "Tedwood": 2,
+          "leejsv": 2,
+          "StatutoryRaitests": 2
+        },
+        "nlredfern": {
+          "Tedwood": 2,
+          "leejsv": 2,
+          "Franc19": 2,
+          "StatutoryRaitests": 1
+        },
+        "jacross2000": {
+          "Franc19": 2,
+          "Leviathan35": 2,
+          "StatutoryRaitests": 2,
+          "Tedwood": 2,
+          "nlredfern": 2,
+          "leejsv": 2,
+          "mavbenson": 1
+        },
+        "Tedwood": {
+          "StatutoryRaitests": 2,
+          "Franc19": 2,
+          "leejsv": 2
+        },
+        "StatutoryRaitests": {
+          "leejsv": 2
+        },
+        "Franc19": {
+          "StatutoryRaitests": 2,
+          "leejsv": 1
+        }
+      },
+      "team_points": {
+        "K309h": 0.0,
+        "jacross2000": 0.0,
+        "naveb": 0.0,
+        "StatutoryRaitests": 0.0,
+        "mavbenson": 0.0,
+        "leejsv": 0.0,
+        "Leviathan35": 0.0,
+        "Franc19": 0.0,
+        "nlredfern": 0.0,
+        "Tedwood": 0.0
+      },
+      "weekly_highs": [
+        {
+          "season": "2025",
+          "week": "01",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "01",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "01",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "01",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "01",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "02",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "02",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "02",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "02",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "02",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "03",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "03",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "03",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "03",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "03",
+          "team": "StatutoryRaitests",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "04",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "04",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "04",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "04",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "04",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "05",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "05",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "05",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "05",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "05",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "06",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "06",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "06",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "06",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "06",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "07",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "07",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "07",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "07",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "07",
+          "team": "Franc19",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "08",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "08",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "08",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "08",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "08",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "09",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "09",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "09",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "09",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "09",
+          "team": "Franc19",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "10",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "10",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "10",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "10",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "10",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "11",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "11",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "11",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "11",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "11",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "12",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "12",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "12",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "12",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "12",
+          "team": "StatutoryRaitests",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "13",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "13",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "13",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "13",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "13",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "14",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "14",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "14",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "14",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "14",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "15",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "15",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "15",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "15",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "15",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "16",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "16",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "16",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "16",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "16",
+          "team": "Franc19",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "17",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "17",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "17",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "17",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2025",
+          "week": "17",
+          "team": "Leviathan35",
+          "points": 0.0
+        }
+      ]
+    }
+  },
+  "all_time": {
+    "head_to_head": {
+      "K309h": {
+        "jacross2000": 2,
+        "Leviathan35": 2,
+        "Franc19": 2,
+        "leejsv": 2,
+        "mavbenson": 2,
+        "StatutoryRaitests": 2,
+        "naveb": 2,
+        "nlredfern": 2,
+        "Tedwood": 1
+      },
+      "naveb": {
+        "StatutoryRaitests": 2,
+        "mavbenson": 2,
+        "Tedwood": 2,
+        "jacross2000": 2,
+        "leejsv": 2,
+        "nlredfern": 2,
+        "Franc19": 2,
+        "Leviathan35": 1
+      },
+      "mavbenson": {
+        "leejsv": 2,
+        "nlredfern": 2,
+        "StatutoryRaitests": 2,
+        "Franc19": 2,
+        "Leviathan35": 2,
+        "Tedwood": 2
+      },
+      "Leviathan35": {
+        "Franc19": 2,
+        "nlredfern": 2,
+        "Tedwood": 2,
+        "leejsv": 2,
+        "StatutoryRaitests": 2
+      },
+      "nlredfern": {
+        "Tedwood": 2,
+        "leejsv": 2,
+        "Franc19": 2,
+        "StatutoryRaitests": 1
+      },
+      "jacross2000": {
+        "Franc19": 2,
+        "Leviathan35": 2,
+        "StatutoryRaitests": 2,
+        "Tedwood": 2,
+        "nlredfern": 2,
+        "leejsv": 2,
+        "mavbenson": 1
+      },
+      "Tedwood": {
+        "StatutoryRaitests": 2,
+        "Franc19": 2,
+        "leejsv": 2
+      },
+      "StatutoryRaitests": {
+        "leejsv": 2
+      },
+      "Franc19": {
+        "StatutoryRaitests": 2,
+        "leejsv": 1
+      }
+    },
+    "team_points": {
+      "K309h": 0.0,
+      "jacross2000": 0.0,
+      "naveb": 0.0,
+      "StatutoryRaitests": 0.0,
+      "mavbenson": 0.0,
+      "leejsv": 0.0,
+      "Leviathan35": 0.0,
+      "Franc19": 0.0,
+      "nlredfern": 0.0,
+      "Tedwood": 0.0
+    },
+    "weekly_highs": [
+      {
+        "season": "2025",
+        "week": "01",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "01",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "01",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "01",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "01",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "02",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "02",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "02",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "02",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "02",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "03",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "03",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "03",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "03",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "03",
+        "team": "StatutoryRaitests",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "04",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "04",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "04",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "04",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "04",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "05",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "05",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "05",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "05",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "05",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "06",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "06",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "06",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "06",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "06",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "07",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "07",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "07",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "07",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "07",
+        "team": "Franc19",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "08",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "08",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "08",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "08",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "08",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "09",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "09",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "09",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "09",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "09",
+        "team": "Franc19",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "10",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "10",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "10",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "10",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "10",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "11",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "11",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "11",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "11",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "11",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "12",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "12",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "12",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "12",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "12",
+        "team": "StatutoryRaitests",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "13",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "13",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "13",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "13",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "13",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "14",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "14",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "14",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "14",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "14",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "15",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "15",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "15",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "15",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "15",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "16",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "16",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "16",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "16",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "16",
+        "team": "Franc19",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "17",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "17",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "17",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "17",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2025",
+        "week": "17",
+        "team": "Leviathan35",
+        "points": 0.0
+      }
+    ]
+  }
+}

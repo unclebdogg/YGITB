@@ -1,0 +1,143 @@
+[
+  {
+    "avatar": "nfl_ne",
+    "display_name": "naveb",
+    "is_bot": null,
+    "is_owner": null,
+    "league_id": "1260643183704932352",
+    "metadata": {
+      "allow_pn": "on",
+      "avatar": "https://sleepercdn.com/uploads/ca6691ee6e5d018fa2791e2ada57ef04.jpg",
+      "mention_pn": "on",
+      "team_name": "Bovco Country "
+    },
+    "settings": null,
+    "user_id": "94958437267816448"
+  },
+  {
+    "avatar": "a7edf17a1956ebe79017732156625301",
+    "display_name": "mavbenson",
+    "is_bot": false,
+    "is_owner": null,
+    "league_id": "1260643183704932352",
+    "metadata": {
+      "allow_pn": "on",
+      "avatar": "https://sleepercdn.com/uploads/79da393e3dc77e6f891685ac31e130ad.jpg",
+      "mention_pn": "on",
+      "team_name": "CFMEU Smokos"
+    },
+    "settings": null,
+    "user_id": "474749566663520256"
+  },
+  {
+    "avatar": "4f4090e5e9c3941414db40a871e3e909",
+    "display_name": "K309h",
+    "is_bot": false,
+    "is_owner": true,
+    "league_id": "1260643183704932352",
+    "metadata": {
+      "allow_pn": "on",
+      "mention_pn": "on",
+      "team_name": "Tua Many Wins"
+    },
+    "settings": null,
+    "user_id": "1135367736106127360"
+  },
+  {
+    "avatar": "d55d1f7075eda01948318de4af616075",
+    "display_name": "jacross2000",
+    "is_bot": false,
+    "is_owner": null,
+    "league_id": "1260643183704932352",
+    "metadata": {
+      "allow_pn": "on",
+      "mention_pn": "on"
+    },
+    "settings": null,
+    "user_id": "1243751191691665408"
+  },
+  {
+    "avatar": "d55d1f7075eda01948318de4af616075",
+    "display_name": "nlredfern",
+    "is_bot": false,
+    "is_owner": null,
+    "league_id": "1260643183704932352",
+    "metadata": {
+      "allow_pn": "on",
+      "mention_pn": "on",
+      "team_name": "Shebangabang #bigwigs"
+    },
+    "settings": null,
+    "user_id": "1258237830732193792"
+  },
+  {
+    "avatar": "d22e52781a5d7a94bcbf2aa70e748382",
+    "display_name": "Leviathan35",
+    "is_bot": false,
+    "is_owner": null,
+    "league_id": "1260643183704932352",
+    "metadata": {
+      "allow_pn": "on",
+      "allow_sms": "on",
+      "mention_pn": "on",
+      "team_name": "The Leviathan"
+    },
+    "settings": null,
+    "user_id": "1260776369839673345"
+  },
+  {
+    "avatar": "d55d1f7075eda01948318de4af616075",
+    "display_name": "Tedwood",
+    "is_bot": false,
+    "is_owner": null,
+    "league_id": "1260643183704932352",
+    "metadata": {
+      "allow_pn": "on",
+      "mention_pn": "on"
+    },
+    "settings": null,
+    "user_id": "1261169947501920258"
+  },
+  {
+    "avatar": "d22e52781a5d7a94bcbf2aa70e748382",
+    "display_name": "Franc19",
+    "is_bot": false,
+    "is_owner": null,
+    "league_id": "1260643183704932352",
+    "metadata": {
+      "allow_pn": "on",
+      "mention_pn": "on"
+    },
+    "settings": null,
+    "user_id": "1261179461810798592"
+  },
+  {
+    "avatar": "d55d1f7075eda01948318de4af616075",
+    "display_name": "StatutoryRaitests",
+    "is_bot": false,
+    "is_owner": null,
+    "league_id": "1260643183704932352",
+    "metadata": {
+      "allow_pn": "on",
+      "mention_pn": "on"
+    },
+    "settings": null,
+    "user_id": "1264547596043563008"
+  },
+  {
+    "avatar": "d22e52781a5d7a94bcbf2aa70e748382",
+    "display_name": "leejsv",
+    "is_bot": false,
+    "is_owner": null,
+    "league_id": "1260643183704932352",
+    "metadata": {
+      "allow_pn": "on",
+      "allow_sms": "on",
+      "avatar": "https://sleepercdn.com/uploads/d699c39a7b5679d3ed165e3f273fc128.jpg",
+      "mention_pn": "on",
+      "team_name": "The Sun Gods"
+    },
+    "settings": null,
+    "user_id": "1264781179337322496"
+  }
+]
