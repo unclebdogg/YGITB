@@ -28,5 +28,3 @@ jobs:
           git add -A
           git commit -m "Update league data [skip ci]" || echo "No changes"
           git push
-
-
