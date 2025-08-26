@@ -1,0 +1,61 @@
+name: Sleeper History Weekly
+
+on:
+  schedule:
+    # 9:00 AM Wednesday AEST (UTC+10) == 23:00 UTC Sunday
+    - cron: "0 23 * * 0"
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run collectors
+        run: |
+          python scripts/sleeper_history.py
+          python scripts/aggregate_stats.py
+
+      - name: Commit & push data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Update league data [skip ci]" || echo "No changes"
+          git push
+name: Sleeper History Weekly
+
+on:
+  schedule:
+    # 9:00 AM Monday AEST (UTC+10) == 23:00 UTC Sunday
+    - cron: "0 23 * * 0"
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run collectors
+        run: |
+          python scripts/sleeper_history.py
+          python scripts/aggregate_stats.py
+
+      - name: Commit & push data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Update league data [skip ci]" || echo "No changes"
+          git push
+
