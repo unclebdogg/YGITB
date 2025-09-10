@@ -1,31 +1,28 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Salt Shaker — Constructors Championship scorer (independent categories)
-----------------------------------------------------------------------
-- Each category is computed from the full data; NO removals across buckets.
-- A player (and therefore the manager) can win multiple categories in a week,
-  e.g., Top QB AND Best MNF Player.
-
+Salt Shaker — Constructors Championship scorer (independent categories, clean outputs)
+-------------------------------------------------------------------------------------
 Outputs:
   - data/<SEASON>/constructors_weekly.json
   - data/constructors_standings.json
 
-Categories:
-  - Best MNF Player (starters only)
+Weekly categories (all independent, a manager can win multiple):
+  - Best MNF Player (starters)
   - Top QB (starters)
   - Top RB (starters)
   - Top WR (starters)
   - Top TE (starters)
   - Top D/ST (starters)
-  - Top K (starters)
+  - Top K  (starters)
   - Top Bench (bench only)
-  - Largest Winning Margin (team total, not player)
+  - Largest Winning Margin (team totals)
 
-Config:
-  - SEASON env var (default "2025")
-  - Per-category points via env:
-      PTS_MNF / PTS_QB / PTS_RB / PTS_WR / PTS_TE / PTS_DST / PTS_K / PTS_BENCH / PTS_DIFF
+Only positive points (>0) considered for player categories.
+
+Env:
+  - SEASON (default "2025")
+  - PTS_MNF, PTS_QB, PTS_RB, PTS_WR, PTS_TE, PTS_DST, PTS_K, PTS_BENCH, PTS_DIFF
 """
 
 import json
@@ -33,9 +30,8 @@ import os
 from pathlib import Path
 from collections import defaultdict
 
-# ------------------ Config ------------------
+# ---------- Config ----------
 SEASON = os.getenv("SEASON", "2025")
-
 POINTS_CONFIG = {
     "mnf_best_player": int(os.getenv("PTS_MNF", "1")),
     "top_qb":          int(os.getenv("PTS_QB", "1")),
@@ -52,7 +48,7 @@ DATA_ROOT = Path("data")
 SEASON_DIR = DATA_ROOT / SEASON
 PLAYERS_INDEX_PATH = DATA_ROOT / "players_nfl.json"
 MNF_PATH = SEASON_DIR / "mnf_schedule.json"
-# --------------------------------------------
+# ----------------------------
 
 def load_json(p: Path, default=None):
     if not p.exists():
@@ -68,9 +64,8 @@ def write_json(path: Path, obj):
 def list_week_files(season_dir: Path):
     return sorted(season_dir.glob("week_*_matchups.json"))
 
-def week_from_fname(p: Path) -> int:
-    # e.g. week_01_matchups.json -> 1
-    stem = p.stem
+def week_from_name(p: Path) -> int:
+    stem = p.stem  # week_01_matchups
     for tok in stem.split("_"):
         if tok.isdigit():
             return int(tok)
@@ -87,93 +82,108 @@ def build_user_maps(season_dir: Path):
     return users_map, roster_to_owner
 
 def is_defense_code(pid) -> bool:
-    # D/ST shows up as team code like "PHI", "NYJ", etc.
+    # D/ST encoded as team code like "PHI","NYJ"
     return isinstance(pid, str) and pid.isalpha() and 2 <= len(pid) <= 3
+
+def get_player_info(players_index, pid):
+    """Return (player_id, full_name, position, team). Handles D/ST codes."""
+    if is_defense_code(pid):
+        return (str(pid), f"{pid} D/ST", "D/ST", str(pid))
+    rec = players_index.get(str(pid)) or {}
+    name = rec.get("full_name") or f"{rec.get('first_name','')} {rec.get('last_name','')}".strip() or str(pid)
+    pos = rec.get("position") or ""
+    team = rec.get("team") or ""
+    return (str(pid), name, pos, team)
 
 def winners_from(bucket, users_map=None):
     """
-    Accept entries shaped as:
-      - dicts:    {"user_id":..., "display_name":..., "points":...}
-      - 3-tuples: (user_id, display_name, points)
-      - 2-tuples: (user_id, points)  -> display_name inferred from users_map
-    Returns: [{"user_id","display_name","points"}, ...] (ties allowed)
+    Accept entries as tuples/dicts including player details:
+      - (user_id, display_name, points, player_id, player_name, position, team)
+      - dict with keys above
+      - (user_id, display_name, points) or (user_id, points) are tolerated
+    - Filters out <=0 points
+    - Dedupes by (user_id, player_id) keeping highest points
+    Returns list of dicts with keys:
+      user_id, display_name, points, player_id, player_name, position, team
     """
     users_map = users_map or {}
-    entries = []
+    best_by_key = {}  # (uid, player_id) -> (uid, disp, pts, pid, pname, pos, team)
 
     for item in bucket or []:
-        uid = disp = None
+        uid = disp = pid = pname = pos = team = None
         pts = 0.0
+
         if isinstance(item, dict):
             uid  = item.get("user_id")
             disp = item.get("display_name") or users_map.get(uid, uid)
             pts  = float(item.get("points") or 0)
+            pid  = str(item.get("player_id") or "")
+            pname = item.get("player_name") or ""
+            pos   = item.get("position") or ""
+            team  = item.get("team") or ""
         elif isinstance(item, (list, tuple)):
-            if len(item) == 3:
+            # Try to unpack with extended fields
+            if len(item) >= 7:
+                uid, disp, pts, pid, pname, pos, team = item[:7]
+                disp = disp or users_map.get(uid, uid)
+                pts = float(pts or 0)
+                pid = str(pid)
+            elif len(item) == 3:
                 uid, disp, pts = item
                 disp = disp or users_map.get(uid, uid)
                 pts = float(pts or 0)
+                pid, pname, pos, team = "", "", "", ""
             elif len(item) == 2:
                 uid, pts = item
                 disp = users_map.get(uid, uid)
                 pts = float(pts or 0)
+                pid, pname, pos, team = "", "", "", ""
             else:
                 continue
         else:
             continue
-        if uid is None:
-            continue
-        entries.append((uid, disp, pts))
 
+        if uid is None or pts <= 0:
+            continue
+        key = (uid, pid)
+        cur = best_by_key.get(key)
+        if cur is None or pts > cur[2]:
+            best_by_key[key] = (uid, disp, pts, pid, pname, pos, team)
+
+    entries = list(best_by_key.values())
     if not entries:
         return []
 
-    max_pts = max(p for _, _, p in entries)
-    return [
-        {"user_id": uid, "display_name": disp, "points": round(p, 2)}
-        for uid, disp, p in entries
-        if p == max_pts
+    max_pts = max(e[2] for e in entries)
+    winners = [
+        {
+            "user_id": uid,
+            "display_name": disp,
+            "points": round(pts, 2),
+            "player_id": pid,
+            "player_name": pname,
+            "position": pos,
+            "team": team,
+        }
+        for (uid, disp, pts, pid, pname, pos, team) in entries
+        if pts == max_pts
     ]
+    return winners
 
 def compute_weekly(season_dir: Path):
-    """
-    Returns:
-      weekly_points_by_user: { "1": {user_id: int, ...}, ... }
-      weekly_payloads: {
-        "1": {
-           "users": {user_id: display_name, ...},
-           "winners": { cat_key: [ {user_id,display_name,points}, ... ], ... },
-           "weekly_points": {user_id: int, ...}
-        }, ...
-      }
-    """
     users_map, roster_to_owner = build_user_maps(season_dir)
     players_index = load_json(PLAYERS_INDEX_PATH, default={})
-    mnf_schedule = load_json(MNF_PATH, default={})  # {"1":["PHI","DAL"], ...}
-
-    def pos_of(pid):
-        # Try to resolve via players index; handle defenses by team code
-        if is_defense_code(pid):
-            return "DEF"
-        rec = players_index.get(str(pid))
-        return (rec or {}).get("position")
-
-    def nfl_team_of(pid):
-        if is_defense_code(pid):
-            return pid  # team defense
-        rec = players_index.get(str(pid))
-        return (rec or {}).get("team")
+    mnf_schedule = load_json(MNF_PATH, default={})
 
     weekly_points_by_user = {}
     weekly_payloads = {}
 
     for wf in list_week_files(season_dir):
-        wk = week_from_fname(wf)
+        wk = week_from_name(wf)
         matchups = load_json(wf, default=[])
         if not matchups:
             continue
 
-        # roster_id -> {starters, players_points, total, matchup_id}
         by_roster = {}
         by_matchup = defaultdict(list)
         for m in matchups:
@@ -193,54 +203,55 @@ def compute_weekly(season_dir: Path):
             if mid is not None:
                 by_matchup[mid].append((rid, pts_total))
 
-        # Category buckets (built independently from full data)
+        # Buckets (independent builds)
         top_qb, top_rb, top_wr, top_te, top_k, top_dst = [], [], [], [], [], []
         top_bench = []
         mnf_bucket = []
         mnf_teams = set(mnf_schedule.get(str(wk), []))
 
-        # Build buckets — NO mutual exclusion
         for rid, info in by_roster.items():
             uid = roster_to_owner.get(rid)
             disp = users_map.get(uid, uid)
             starters = info["starters"]
             pp = info["players_points"]
 
-            # Starters: attribute by position + MNF separately
+            # starters by position + MNF
             for pid in starters:
                 pid_str = str(pid)
                 pts = float(pp.get(pid_str, 0.0))
-                pos = pos_of(pid)
+                (player_id, pname, pos, team) = get_player_info(players_index, pid)
 
-                # Position buckets (independent of MNF)
-                if is_defense_code(pid) or pos in ("DEF", "D/ST"):
-                    top_dst.append((uid, disp, pts))
-                elif pos == "QB":
-                    top_qb.append((uid, disp, pts))
-                elif pos == "RB":
-                    top_rb.append((uid, disp, pts))
-                elif pos == "WR":
-                    top_wr.append((uid, disp, pts))
-                elif pos == "TE":
-                    top_te.append((uid, disp, pts))
-                elif pos == "K":
-                    top_k.append((uid, disp, pts))
-                # Unknown positions are ignored for top-pos categories
+                # position buckets (ignore non-positive)
+                if pts > 0:
+                    if pos == "QB":
+                        top_qb.append((uid, disp, pts, player_id, pname, pos, team))
+                    elif pos == "RB":
+                        top_rb.append((uid, disp, pts, player_id, pname, pos, team))
+                    elif pos == "WR":
+                        top_wr.append((uid, disp, pts, player_id, pname, pos, team))
+                    elif pos == "TE":
+                        top_te.append((uid, disp, pts, player_id, pname, pos, team))
+                    elif pos == "K":
+                        top_k.append((uid, disp, pts, player_id, pname, pos, team))
+                    elif pos in ("D/ST", "DEF") or is_defense_code(pid):
+                        top_dst.append((uid, disp, pts, player_id, pname, "D/ST", team))
 
-                # MNF bucket (independent): any starter whose NFL team is in MNF teams
-                nfl_tm = nfl_team_of(pid)
-                if nfl_tm and nfl_tm in mnf_teams:
-                    mnf_bucket.append((uid, disp, pts))
+                # MNF (independent)
+                if team and team in mnf_teams and pts > 0:
+                    mnf_bucket.append((uid, disp, pts, player_id, pname, pos or ("D/ST" if is_defense_code(pid) else ""), team))
 
-            # Bench category: any roster player that is NOT in starters
+            # bench: players with points in pp that are NOT a starter
             starter_set = set(str(x) for x in starters)
-            all_seen_ids = set(pp.keys())  # points dict contains both starters and bench IDs
-            bench_ids = [pid for pid in all_seen_ids if pid not in starter_set]
-            for bpid in bench_ids:
-                bpts = float(pp.get(bpid, 0.0))
-                top_bench.append((uid, disp, bpts))
+            for bpid, bpts in pp.items():
+                if bpid in starter_set:
+                    continue
+                bpts_val = float(bpts or 0.0)
+                if bpts_val <= 0:
+                    continue
+                (player_id, pname, pos, team) = get_player_info(players_index, bpid)
+                top_bench.append((uid, disp, bpts_val, player_id, pname, pos, team))
 
-        # Largest Winning Margin (team totals)
+        # Largest diff
         largest_diff = []
         for mid, pairs in by_matchup.items():
             if len(pairs) < 2:
@@ -248,11 +259,11 @@ def compute_weekly(season_dir: Path):
             pairs_sorted = sorted(pairs, key=lambda t: float(t[1]), reverse=True)
             (winner_rid, w_pts), (_, l_pts) = pairs_sorted[0], pairs_sorted[1]
             diff = float(w_pts) - float(l_pts)
-            uid = roster_to_owner.get(winner_rid)
-            disp = users_map.get(uid, uid)
-            largest_diff.append((uid, disp, diff))
+            if diff > 0:
+                uid = roster_to_owner.get(winner_rid)
+                disp = users_map.get(uid, uid)
+                largest_diff.append((uid, disp, diff, "", "", "", ""))  # no player
 
-        # Winners (with ties allowed)
         winners = {
             "mnf_best_player": winners_from(mnf_bucket, users_map),
             "top_qb":          winners_from(top_qb, users_map),
@@ -265,7 +276,7 @@ def compute_weekly(season_dir: Path):
             "largest_diff":    winners_from(largest_diff, users_map),
         }
 
-        # Sum weekly constructors points by user (each category independent)
+        # Sum weekly points
         week_totals = defaultdict(int)
         for cat_key, wlist in winners.items():
             if not wlist:
@@ -281,10 +292,6 @@ def compute_weekly(season_dir: Path):
             "weekly_points": dict(sorted(week_totals.items(), key=lambda kv: kv[1], reverse=True)),
         }
 
-        # --- Optional sanity: audit that overlap is possible (no-op if not needed) ---
-        # For example, if the single top scorer in mnf_bucket also tops a position,
-        # both lists will include that manager. We do NOT alter either bucket.
-
     return weekly_points_by_user, weekly_payloads
 
 def main():
@@ -298,13 +305,13 @@ def main():
         })
         return
 
-    weekly_points_by_user, weekly_payloads = compute_weekly(SEASON_DIR)
+    weekly_points, weekly_payloads = compute_weekly(SEASON_DIR)
 
-    # Write weekly payloads
+    # Write weekly payloads (per-week winners + weekly points)
     weekly_out = SEASON_DIR / "constructors_weekly.json"
     write_json(weekly_out, weekly_payloads)
 
-    # Build cumulative standings for this season
+    # Cumulative standings for this season
     cumulative = defaultdict(int)
     all_users = {}
     for wk, payload in weekly_payloads.items():
