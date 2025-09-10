@@ -29,5 +29,6 @@
     "top_bench": 1,
     "largest_diff": 1
   },
-  "season": "2025"
+  "season": "2025",
+  "tie_mode": "single"
 }

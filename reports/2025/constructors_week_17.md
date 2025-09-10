@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 17
-_Generated: 2025-09-10 05:08 UTC_
+_Generated: 2025-09-10 05:15 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |

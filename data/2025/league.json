@@ -53,10 +53,10 @@
   "avatar": null,
   "company_id": null,
   "last_message_id": "1271362212421713920",
+  "sport": "nfl",
   "shard": 139,
   "season": "2025",
   "season_type": "regular",
-  "sport": "nfl",
   "scoring_settings": {
     "sack": 1.0,
     "fgm_40_49": 4.0,
@@ -110,8 +110,8 @@
   "last_message_text_map": null,
   "last_message_time": 1757478881511,
   "last_pinned_message_id": null,
-  "last_read_id": null,
   "draft_id": "1260643184329904128",
+  "last_read_id": null,
   "league_id": "1260643183704932352",
   "previous_league_id": null,
   "roster_positions": [
@@ -131,9 +131,9 @@
     "BN",
     "BN"
   ],
-  "group_id": null,
   "bracket_id": null,
   "bracket_overrides_id": null,
+  "group_id": null,
   "loser_bracket_id": null,
   "loser_bracket_overrides_id": null,
   "total_rosters": 10
