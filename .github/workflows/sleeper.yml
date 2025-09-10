@@ -9,7 +9,7 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 23 * * 2"   # Wed 9am Sydney
+    - cron: "0 23 * * 2"   # Wed 9am Sydney (AEST)
   workflow_dispatch:
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
           mkdir -p data
           curl -fSL https://api.sleeper.app/v1/players/nfl -o data/players_nfl.json
 
-      # 2) Collect league data (users, rosters, weekly matchups)
+      # 2) Collect league data (users, rosters, weekly matchups, etc.)
       - name: Run collectors
         run: |
           set -eux
@@ -44,7 +44,13 @@ jobs:
           set -eux
           python -u scripts/constructors.py
 
-      # 4) Commit & push
+      # 3b) Generate Markdown report (AFTER constructors, BEFORE commit)
+      - name: Constructors Markdown report
+        run: |
+          set -eux
+          python -u scripts/constructors_report.py
+
+      # 4) Commit & push all generated data and reports
       - name: Commit & push data
         run: |
           set -eux
@@ -54,8 +60,12 @@ jobs:
           if ! git diff --quiet; then
             git add -A
             git commit -m "Update league + constructors data [skip ci]" || true
+
+            # Rebase on the latest remote main to avoid non-fast-forward
             git fetch origin
             git pull --rebase --autostash origin main || true
+
+            # Try normal push; if main moved again, use safe force
             git push origin HEAD:main || git push --force-with-lease origin HEAD:main
           else
             echo "No changes"
