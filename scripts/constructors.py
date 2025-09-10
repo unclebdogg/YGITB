@@ -37,15 +37,15 @@ from collections import defaultdict
 SEASON = os.getenv("SEASON", "2025")
 
 POINTS_CONFIG = {
-    "mnf_best_player": int(os.getenv("PTS_MNF", "5")),
-    "top_qb":          int(os.getenv("PTS_QB", "5")),
-    "top_rb":          int(os.getenv("PTS_RB", "5")),
-    "top_wr":          int(os.getenv("PTS_WR", "5")),
-    "top_te":          int(os.getenv("PTS_TE", "5")),
-    "top_dst":         int(os.getenv("PTS_DST", "5")),
-    "top_k":           int(os.getenv("PTS_K", "5")),
-    "top_bench":       int(os.getenv("PTS_BENCH", "5")),
-    "largest_diff":    int(os.getenv("PTS_DIFF", "5")),
+    "mnf_best_player": int(os.getenv("PTS_MNF", "1")),
+    "top_qb":          int(os.getenv("PTS_QB", "1")),
+    "top_rb":          int(os.getenv("PTS_RB", "1")),
+    "top_wr":          int(os.getenv("PTS_WR", "1")),
+    "top_te":          int(os.getenv("PTS_TE", "1")),
+    "top_dst":         int(os.getenv("PTS_DST", "1")),
+    "top_k":           int(os.getenv("PTS_K", "1")),
+    "top_bench":       int(os.getenv("PTS_BENCH", "1")),
+    "largest_diff":    int(os.getenv("PTS_DIFF", "1")),
 }
 
 DATA_ROOT = Path("data")
