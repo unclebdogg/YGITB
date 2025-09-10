@@ -9,7 +9,7 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 23 * * 2"   # Wed 9am Sydney
+    - cron: "0 23 * * 2"   # Wed 9am Sydney (AEST)
   workflow_dispatch:
 
 jobs:
@@ -24,28 +24,48 @@ jobs:
         with:
           python-version: '3.11'
 
+      # 1) Fetch Sleeper players index for ID->name/pos/team mapping
+      - name: Fetch Sleeper players index
+        run: |
+          set -eux
+          mkdir -p data
+          curl -fSL https://api.sleeper.app/v1/players/nfl -o data/players_nfl.json
+
+      # 2) Collect league data (users, rosters, weekly matchups, etc.)
       - name: Run collectors
         run: |
           set -eux
           python -u scripts/sleeper_history.py
           python -u scripts/aggregate_stats.py
 
+      # 3) Run Constructors / Salt Shaker scoring
+      - name: Constructors Championship
+        run: |
+          set -eux
+          python -u scripts/constructors.py
+
+      # 3b) Generate Markdown report (AFTER constructors, BEFORE commit)
+      - name: Constructors Markdown report
+        run: |
+          set -eux
+          python -u scripts/constructors_report.py
+
+      # 4) Commit & push all generated data and reports
       - name: Commit & push data
         run: |
           set -eux
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          # Only commit if there are changes
           if ! git diff --quiet; then
             git add -A
-            git commit -m "Update league data [skip ci]" || true
+            git commit -m "Update league + constructors data [skip ci]" || true
 
-            # Integrate any new remote commits that landed while we were running
+            # Rebase on the latest remote main to avoid non-fast-forward
             git fetch origin
             git pull --rebase --autostash origin main || true
 
-            # Try a normal push first; if main moved again, use a safe force
+            # Try normal push; if main moved again, use safe force
             git push origin HEAD:main || git push --force-with-lease origin HEAD:main
           else
             echo "No changes"
