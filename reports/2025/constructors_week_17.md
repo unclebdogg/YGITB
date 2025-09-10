@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 17
-_Generated: 2025-09-10 04:02 UTC_
+_Generated: 2025-09-10 04:46 UTC_
 
 ## Weekly Category Winners
 - **Best MNF Player**: nlredfern
@@ -17,31 +17,31 @@ _Generated: 2025-09-10 04:02 UTC_
 
 | Rank | Manager | Points |
 |---:|---|---:|
-| 1 | nlredfern | 16 |
-| 2 | K309h | 16 |
-| 3 | naveb | 16 |
-| 4 | mavbenson | 16 |
-| 5 | Leviathan35 | 16 |
-| 6 | jacross2000 | 16 |
-| 7 | leejsv | 15 |
-| 8 | Tedwood | 15 |
-| 9 | StatutoryRaitests | 15 |
-| 10 | Franc19 | 14 |
+| 1 | nlredfern | 80 |
+| 2 | K309h | 80 |
+| 3 | naveb | 80 |
+| 4 | mavbenson | 80 |
+| 5 | Leviathan35 | 80 |
+| 6 | jacross2000 | 80 |
+| 7 | leejsv | 75 |
+| 8 | Tedwood | 75 |
+| 9 | StatutoryRaitests | 75 |
+| 10 | Franc19 | 70 |
 
 
 ### Constructors Standings (Cumulative)
 
 | Rank | Manager | Points |
 |---:|---|---:|
-| 1 | K309h | 269 |
-| 2 | naveb | 266 |
-| 3 | mavbenson | 262 |
-| 4 | nlredfern | 262 |
-| 5 | Leviathan35 | 260 |
-| 6 | jacross2000 | 255 |
-| 7 | leejsv | 253 |
-| 8 | Tedwood | 248 |
-| 9 | StatutoryRaitests | 243 |
-| 10 | Franc19 | 239 |
+| 1 | K309h | 1345 |
+| 2 | naveb | 1330 |
+| 3 | mavbenson | 1310 |
+| 4 | nlredfern | 1310 |
+| 5 | Leviathan35 | 1300 |
+| 6 | jacross2000 | 1275 |
+| 7 | leejsv | 1265 |
+| 8 | Tedwood | 1240 |
+| 9 | StatutoryRaitests | 1215 |
+| 10 | Franc19 | 1195 |
 
-_Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1
+_Scoring config:_ mnf_best_player:5, top_qb:5, top_rb:5, top_wr:5, top_te:5, top_dst:5, top_k:5, top_bench:5, largest_diff:5
