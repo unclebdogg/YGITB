@@ -11,6 +11,31 @@ on:
   schedule:
     - cron: "0 23 * * 2"   # Wed 9am Sydney
   workflow_dispatch:
+- uses: actions/checkout@v4
+  with:
+    fetch-depth: 0
+- name: Commit & push data
+  run: |
+    set -eux
+    git config user.name "github-actions"
+    git config user.email "actions@github.com"
+
+    # Only commit if there are changes
+    if ! git diff --quiet; then
+      git add -A
+      git commit -m "Update league + constructors data [skip ci]" || true
+
+      # Integrate remote changes that landed while we were running
+      git fetch origin
+      git pull --rebase --autostash origin main || true
+
+      # Try normal push first
+      git push origin HEAD:main || \
+      # If main moved again in the last second, use a safe force
+      git push --force-with-lease origin HEAD:main
+    else
+      echo "No changes to commit."
+    fi
 
 
 jobs:
