@@ -1,15 +1,38 @@
 #!/usr/bin/env python3
-# scripts/constructors_report.py
-import json, os, pathlib, sys
+# -*- coding: utf-8 -*-
+"""
+Salt Shaker — Constructors Markdown Report
+------------------------------------------
+Reads:
+  - data/<SEASON>/constructors_weekly.json
+  - data/constructors_standings.json
+Outputs:
+  - reports/<SEASON>/constructors_week_{NN}.md
+"""
+
+import json, os, pathlib
 from datetime import datetime
 
 DATA_ROOT = pathlib.Path("data")
-SEASON    = os.getenv("SEASON", "2025")
-SEASON_DIR = DATA_ROOT / SEASON
-WEEKLY_FILE = SEASON_DIR / "constructors_weekly.json"
+REPORT_ROOT = pathlib.Path("reports")
+SEASON = os.getenv("SEASON", "2025")
+
+WEEKLY_FILE = DATA_ROOT / SEASON / "constructors_weekly.json"
 STANDINGS_FILE = DATA_ROOT / "constructors_standings.json"
-REPORT_DIR = pathlib.Path("reports") / SEASON
+REPORT_DIR = REPORT_ROOT / SEASON
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
+
+CAT_LABELS = {
+    "mnf_best_player": "Best MNF Player",
+    "top_qb": "Top QB",
+    "top_rb": "Top RB",
+    "top_wr": "Top WR",
+    "top_te": "Top TE",
+    "top_dst": "Top D/ST",
+    "top_k": "Top K",
+    "top_bench": "Top Bench",
+    "largest_diff": "Largest Winning Margin",
+}
 
 def load_json(p):
     if not p.exists():
@@ -17,37 +40,26 @@ def load_json(p):
     with open(p, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def latest_week(weekly: dict) -> str | None:
-    if not weekly:
+def latest_week_key(weekly_dict):
+    # keys are "1","2",... (strings); return highest as "NN"
+    if not weekly_dict:
         return None
-    # keys are "01","02",...
-    ks = sorted((int(k) for k in weekly.keys()))
-    return f"{ks[-1]:02d}" if ks else None
+    ks = sorted(int(k) for k in weekly_dict.keys())
+    return str(ks[-1])
 
-def winner_line(category: str, arr: list[dict], users: dict) -> str:
-    if not arr:
-        return f"- **{category}**: —"
-    names = []
-    for w in arr:
-        # winner objects can have user_id + display_name
-        uid = w.get("user_id") or ""
-        disp = w.get("display_name") or users.get(uid, uid) or uid
-        names.append(disp)
-    return f"- **{category}**: " + ", ".join(names)
-
-def table_rank(rows, title="Standings", top_n=10):
-    if not rows:
-        return f"\n### {title}\n_No data yet._\n"
-    lines = [f"\n### {title}\n", "| Rank | Manager | Points |", "|---:|---|---:|"]
-    for i, (name, pts) in enumerate(rows[:top_n], start=1):
-        lines.append(f"| {i} | {name} | {pts} |")
-    return "\n".join(lines) + "\n"
+def md_table(headers, rows):
+    out = []
+    out.append("| " + " | ".join(headers) + " |")
+    out.append("|" + "|".join("---" for _ in headers) + "|")
+    for r in rows:
+        out.append("| " + " | ".join(str(x) for x in r) + " |")
+    return "\n".join(out)
 
 def main():
-    weekly = load_json(WEEKLY_FILE)
+    weekly = load_json(WEEKLY_FILE)  # {"01": {...}, "02": {...}, ...} or {"1": {...}}
     standings = load_json(STANDINGS_FILE)
 
-    wk = latest_week(weekly)
+    wk = latest_week_key(weekly)
     if not wk:
         out = REPORT_DIR / "constructors_week__no_data.md"
         with open(out, "w", encoding="utf-8") as f:
@@ -55,64 +67,101 @@ def main():
         print(f"Wrote {out}")
         return
 
-    week_payload = weekly.get(wk, {})
-    winners = week_payload.get("winners", {})
-    week_users = week_payload.get("users", {})  # {user_id: display_name}
+    payload = weekly[wk]
+    winners = payload.get("winners", {})
+    week_points = payload.get("weekly_points", {})
+    users_map = payload.get("users", {})
 
-    # Build standings rows from global file (user_id keyed)
+    # Weekly Category Winners table
+    winners_rows = []
+    for key in [
+        "mnf_best_player","top_qb","top_rb","top_wr","top_te","top_dst","top_k","top_bench","largest_diff"
+    ]:
+        label = CAT_LABELS.get(key, key)
+        items = winners.get(key, [])
+        if not items:
+            winners_rows.append([label, "—", "—", "—", "—", "—"])
+            continue
+        # Multiple winners allowed (ties). One row per winner.
+        for w in items:
+            manager = w.get("display_name", w.get("user_id",""))
+            player  = w.get("player_name") or ("—" if key=="largest_diff" else "")
+            pos     = w.get("position") or ("—" if key=="largest_diff" else "")
+            team    = w.get("team") or ("—" if key=="largest_diff" else "")
+            pts     = w.get("points", "")
+            winners_rows.append([label, manager, player, pos, team, pts])
+    winners_section = md_table(
+        ["Category", "Manager", "Player", "Pos", "Team", "Pts"],
+        winners_rows
+    )
+
+    # Weekly scoreboard (latest week)
+    wp_rows = sorted(
+        [ (users_map.get(uid, uid), pts) for uid, pts in week_points.items() ],
+        key=lambda x: x[1], reverse=True
+    )
+    weekly_rows = []
+    for i, (name, pts) in enumerate(wp_rows, start=1):
+        weekly_rows.append([i, name, pts])
+    weekly_section = md_table(["Rank","Manager","Points"], weekly_rows)
+
+    # Build week-by-week wide table from ALL weeks present
+    all_week_keys = sorted(int(k) for k in weekly.keys())
+    managers = set()
+    for k in weekly.keys():
+        managers.update((weekly[k].get("weekly_points") or {}).keys())
+    managers = sorted(managers, key=lambda uid: users_map.get(uid, uid))
+
+    wide_headers = ["Manager"] + [f"Wk {wk}" for wk in all_week_keys] + ["Total"]
+    wide_rows = []
+    for uid in managers:
+        name = users_map.get(uid, uid)
+        row_vals = []
+        total = 0
+        for wk_i in all_week_keys:
+            wkp = weekly[str(wk_i)].get("weekly_points") or {}
+            pts = int(wkp.get(uid, 0))
+            total += pts
+            row_vals.append(pts)
+        wide_rows.append([name] + row_vals + [total])
+    week_by_week_section = md_table(wide_headers, wide_rows)
+
+    # Cumulative standings
     all_users = standings.get("users", {})
     totals = standings.get("standings_all_time", {})
-    rows = sorted(
+    cum_rows = sorted(
         [(all_users.get(uid, uid), pts) for uid, pts in totals.items()],
         key=lambda x: x[1],
         reverse=True
     )
+    cum_tbl_rows = []
+    for i, (name, pts) in enumerate(cum_rows, start=1):
+        cum_tbl_rows.append([i, name, pts])
+    cumulative_section = md_table(["Rank","Manager","Points"], cum_tbl_rows)
 
-    # Nicely ordered categories
-    cat_order = [
-        ("mnf_best_player", "Best MNF Player"),
-        ("top_qb", "Top QB"),
-        ("top_rb", "Top RB"),
-        ("top_wr", "Top WR"),
-        ("top_te", "Top TE"),
-        ("top_dst", "Top D/ST"),
-        ("top_k", "Top K"),
-        ("top_bench", "Top Bench"),
-        ("largest_diff", "Largest Winning Margin"),
-    ]
+    # Points config line
+    cfg = standings.get("points_config", {})
+    cfg_str = ", ".join(f"{k}:{v}" for k,v in cfg.items()) if cfg else ""
 
-    # Compose report
+    # Compose MD
     ts = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
-    lines = []
-    lines.append(f"# Salt Shaker Constructors — Week {wk}")
-    lines.append(f"_Generated: {ts}_\n")
-
-    lines.append("## Weekly Category Winners")
-    for key, label in cat_order:
-        lines.append(winner_line(label, winners.get(key, []), {**all_users, **week_users}))
-    lines.append("")
-
-    # Weekly points table (only those who scored this week)
-    weekly_points = week_payload.get("weekly_points", {})
-    weekly_rows = sorted(
-        [ (week_users.get(uid, all_users.get(uid, uid)), pts) for uid, pts in weekly_points.items() ],
-        key=lambda x: x[1],
-        reverse=True
-    )
-    lines.append(table_rank(weekly_rows, title=f"Week {wk} Points"))
-
-    # All-time/cumulative standings
-    lines.append(table_rank(rows, title="Constructors Standings (Cumulative)", top_n=20))
-
-    # Helpful footer
-    points_cfg = standings.get("points_config", {})
-    if points_cfg:
-        cfg_str = ", ".join(f"{k}:{v}" for k,v in points_cfg.items())
-        lines.append(f"_Scoring config:_ {cfg_str}\n")
+    md = []
+    md.append(f"# Salt Shaker Constructors — Week {wk}")
+    md.append(f"_Generated: {ts}_\n")
+    md.append("## Weekly Category Winners")
+    md.append(winners_section)
+    md.append("\n## Weekly Scoreboard")
+    md.append(weekly_section)
+    md.append("\n## Week-by-Week Scoreboard")
+    md.append(week_by_week_section)
+    md.append("\n## Constructors Standings (Cumulative)")
+    md.append(cumulative_section)
+    if cfg_str:
+        md.append(f"\n_Scoring config:_ {cfg_str}")
 
     out_path = REPORT_DIR / f"constructors_week_{wk}.md"
     with open(out_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines).rstrip() + "\n")
+        f.write("\n".join(md).rstrip() + "\n")
     print(f"Wrote {out_path}")
 
 if __name__ == "__main__":
