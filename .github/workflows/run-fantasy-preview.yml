@@ -62,7 +62,7 @@ jobs:
           echo "Preview for ${{ matrix.name }} -> ${{ matrix.outdir }}"
           python -m scripts.run_bot preview
 
-           - name: Commit & push reports (if any changed)
+      - name: Commit & push reports (if any changed)
         env:
           BRANCH_NAME: ${{ github.ref_name }}
         run: |
@@ -82,7 +82,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore(${GITHUB_WORKFLOW%% *}): update ${{ matrix.name }} $(date -u +'%Y-%m-%dT%H:%MZ')"
+          git commit -m "chore(preview): update ${{ matrix.name }} $(date -u +'%Y-%m-%dT%H:%MZ')"
 
           # Rebase on latest remote; --autostash handles any remaining local noise
           git fetch origin
