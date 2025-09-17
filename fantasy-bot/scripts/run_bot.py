@@ -1,4 +1,8 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
+import json
 import requests
 from datetime import datetime, timedelta
 import pytz
@@ -13,11 +17,14 @@ from .sleeper import (
     get_players_index,
     build_matchup_cards,
 )
-from .writer import to_markdown, write_report, output_path
+from .writer import write_report, output_path
 
 OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions"
 
 
+# ----------------------------
+# LLM helpers
+# ----------------------------
 def openai_chat(model, system, user, temperature=0.6, max_tokens=2000, api_key=None):
     if not api_key:
         raise SystemExit("Missing OPENAI_API_KEY env.")
@@ -28,16 +35,37 @@ def openai_chat(model, system, user, temperature=0.6, max_tokens=2000, api_key=N
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
-        "temperature": temperature,
-        "max_tokens": max_tokens,
+        "temperature": float(temperature),
+        "max_tokens": int(max_tokens),
     }
     r = requests.post(OPENAI_CHAT_URL, headers=headers, json=payload, timeout=120)
     r.raise_for_status()
     return r.json()["choices"][0]["message"]["content"].strip()
 
 
+def parse_json_or_die(text: str):
+    try:
+        return json.loads(text)
+    except Exception:
+        stripped = text.strip()
+        # If the model added fences, try to strip them
+        if stripped.startswith("```"):
+            stripped = stripped.strip("`")
+            if "\n" in stripped:
+                stripped = stripped.split("\n", 1)[1]
+            try:
+                return json.loads(stripped)
+            except Exception:
+                pass
+        preview = stripped[:800]
+        raise SystemExit(f"LLM did not return valid JSON.\n---\n{preview}\n---")
+
+
+# ----------------------------
+# Time / league helpers
+# ----------------------------
 def local_week_window(tz_name: str):
-    """Purely presentational week window label for the MD header."""
+    """Return label window (Mon–Sun) for header only."""
     tz = pytz.timezone(tz_name)
     now = datetime.now(tz)
     start = (now - timedelta(days=now.weekday())).replace(hour=0, minute=0, second=0, microsecond=0)
@@ -46,68 +74,186 @@ def local_week_window(tz_name: str):
 
 
 def resolve_week_for(kind: str) -> int:
-    """Use Sleeper state to get current week; for recap use previous week."""
+    """Use Sleeper state to get current week; for recap, use previous week."""
     st = get_state()
-    week = st.get("week") or 1
-    week = int(week)
+    week = int(st.get("week") or 1)
     return week if kind == "preview" else max(1, week - 1)
 
 
+# ----------------------------
+# Prompt assembly
+# ----------------------------
 def assemble_preview_prompt(league, week, cards, tz_name):
+    """
+    Structured preview: team names, records, projections.
+    The system prompt enforces JSON; user prompt gives raw matchup lines.
+    """
     sys = read_text("prompts/system_preview.txt")
     usr_tpl = read_text("prompts/user_preview.txt")
     start_date, end_date = local_week_window(tz_name)
-    teams = sorted({c["home_name"] for c in cards} | {c["away_name"] for c in cards})
-    match_lines = [
-        f"- {c['home_name']} vs {c['away_name']} — proj {c['home_points']}–{c['away_points']}"
-        for c in cards
-    ]
+
+    lines = []
+    for c in cards:
+        lines.append(
+            f"- {c['home_name']} (rec {c['home_record']['text']}), proj {c['home_points']} "
+            f"vs {c['away_name']} (rec {c['away_record']['text']}), proj {c['away_points']}"
+        )
+
     usr = render_template(
         usr_tpl,
         week=str(week),
         start_date=start_date,
         end_date=end_date,
         league_name=league.get("name", "Your League"),
-        teams_overview=", ".join(teams),
-        matchups_block="\n".join(match_lines),
+        matchups_block="\n".join(lines),
     )
     return sys, usr, start_date, end_date
 
 
 def assemble_recap_prompt(league, week, cards, tz_name):
+    """
+    Structured recap: scoreline plus top 1–2 stars per team (from starters).
+    """
     sys = read_text("prompts/system_recap.txt")
     usr_tpl = read_text("prompts/user_recap.txt")
     start_date, end_date = local_week_window(tz_name)
-    results = []
+
+    def star_fmt(s):
+        return f"{s['player']} ({s.get('nfl_team','?')} {s.get('pos','?')} – {s.get('points','?')} pts)"
+
+    lines = []
     for c in cards:
-        if c["home_points"] is None or c["away_points"] is None:
-            continue
-        results.append(
-            f"- {c['home_name']} {c['home_points']} def. {c['away_name']} {c['away_points']}"
+        # score
+        if c["home_points"] is not None and c["away_points"] is not None:
+            score = (
+                f"{c['home_name']} ({c['home_record']['text']}) {c['home_points']} "
+                f"def. {c['away_name']} ({c['away_record']['text']}) {c['away_points']}"
+            )
+        else:
+            score = (
+                f"{c['home_name']} ({c['home_record']['text']}) vs "
+                f"{c['away_name']} ({c['away_record']['text']}) (no final score)"
+            )
+        # stars
+        home_stars = ", ".join(star_fmt(s) for s in (c.get("home_stars") or []))
+        away_stars = ", ".join(star_fmt(s) for s in (c.get("away_stars") or []))
+        stars_line = (
+            f"  • Stars {c['home_name']}: {home_stars if home_stars else '—'} | "
+            f"{c['away_name']}: {away_stars if away_stars else '—'}"
         )
+        lines.append(f"- {score}\n{stars_line}")
+
     usr = render_template(
         usr_tpl,
         week=str(week),
         start_date=start_date,
         end_date=end_date,
         league_name=league.get("name", "Your League"),
-        results_block="\n".join(results) or "(No finals found)",
-        leaders_block="Top outputs by position not computed here (extend later).",
+        results_block="\n".join(lines) or "(No results found)",
     )
     return sys, usr, start_date, end_date
 
 
-def split_headline(text: str):
-    """First non-empty line becomes the headline if short; else default."""
-    lines = [l.rstrip() for l in text.splitlines() if l.strip()]
-    if not lines:
-        return "League Update", text
-    first = lines[0]
-    if len(first) <= 80 and not first.lower().startswith(("1)", "- ")):
-        return first.lstrip("# ").strip(), "\n".join(lines[1:]).strip()
-    return "League Update", text
+# ----------------------------
+# Markdown renderers
+# ----------------------------
+def md_preview_from_json(week: int, data: dict, local_start: str, local_end: str) -> str:
+    parts = []
+    parts.append(f"# Preview – Week {week}\n\n> Window: {local_start} – {local_end}\n")
+    parts.append(f"## {data.get('headline','League Preview')}\n")
+    sl = data.get("storylines") or []
+    if sl:
+        parts.append("**Key Storylines**")
+        for s in sl:
+            parts.append(f"- {s}")
+        parts.append("")
+    for m in data.get("matchups", []):
+        h, a = m.get("home", {}), m.get("away", {})
+        title = f"### {h.get('name','?')} ({h.get('record','-')}) vs {a.get('name','?')} ({a.get('record','-')})"
+        sub = f"_Projections:_ {h.get('proj','?')} – {a.get('proj','?')}"
+        parts.append(title)
+        parts.append(sub)
+        if m.get("angle"):
+            parts.append(f"**Angle:** {m['angle']}")
+        if m.get("capsule"):
+            parts.append(m["capsule"])
+        parts.append("")
+    if data.get("kicker"):
+        parts.append(f"> {data['kicker']}")
+    parts.append("")
+    return "\n".join(parts)
 
 
+def md_recap_from_json(week: int, data: dict, local_start: str, local_end: str) -> str:
+    POS_ICON = {
+        "QB": "🧠",
+        "RB": "🏃",
+        "WR": "🎯",
+        "TE": "🧲",
+        "K": "🎯",
+        "DEF": "🛡️",
+        "DST": "🛡️",
+        "FLEX": "🔁",
+    }
+    STAR = "⭐"
+    TROPHY = "🏆"
+
+    parts = []
+    parts.append(f"# Recap – Week {week}\n\n> Window: {local_start} – {local_end}\n")
+    parts.append(f"## {data.get('headline','League Recap')}\n")
+
+    # Moments
+    mm = data.get("moments") or []
+    if mm:
+        parts.append("**Moments That Mattered**")
+        for s in mm:
+            parts.append(f"- {s}")
+        parts.append("")
+
+    # Games
+    for g in data.get("games", []):
+        h, a = g.get("home", {}), g.get("away", {})
+        r = g.get("result", {})
+        title = (
+            f"### {h.get('name','?')} ({h.get('record','-')}) "
+            f"{r.get('home','?')} – {r.get('away','?')} "
+            f"{a.get('name','?')} ({a.get('record','-')})"
+        )
+        parts.append(title)
+
+        # Star performers
+        stars = g.get("stars") or []
+        if stars:
+            star_bits = []
+            for s in stars:
+                icon = POS_ICON.get((s.get("pos") or "").upper(), STAR)
+                star_bits.append(
+                    f"{icon} {s.get('player','?')} "
+                    f"({s.get('nfl_team','?')} {s.get('pos','?')} – {s.get('points','?')} pts)"
+                )
+            parts.append("**Star Performers:** " + ", ".join(star_bits))
+
+        # Capsule
+        if g.get("capsule"):
+            parts.append(g["capsule"])
+
+        parts.append("")
+
+    # Pulse
+    pulse = data.get("pulse") or []
+    if pulse:
+        parts.append("**Power Pulse**")
+        for i, s in enumerate(pulse, start=1):
+            lead = TROPHY if i == 1 else "•"
+            parts.append(f"- {lead} {s}")
+        parts.append("")
+
+    return "\n".join(parts)
+
+
+# ----------------------------
+# Main
+# ----------------------------
 def main(kind: str):
     # Config & env
     cfg = load_config()
@@ -115,11 +261,10 @@ def main(kind: str):
     output_dir = get_env("OUTPUT_DIR", "reports")
     api_key = get_env("OPENAI_API_KEY")
     league_id = get_env("SLEEPER_LEAGUE_ID")
-
     if not league_id:
         raise SystemExit("Missing SLEEPER_LEAGUE_ID env.")
 
-    # Optional time-gating (disabled in your cron workflows via DISABLE_TIMEGATE=1)
+    # Optional timegate (disabled in cron via DISABLE_TIMEGATE=1)
     if os.getenv("DISABLE_TIMEGATE", "").lower() not in ("1", "true"):
         gate_ok = should_run(
             kind,
@@ -133,7 +278,7 @@ def main(kind: str):
             print(f"[{kind}] Outside run window for {tz_name}. Exiting cleanly.")
             return
 
-    # Data fetch
+    # Sleeper data
     week = resolve_week_for(kind)
     league = get_league(league_id)
     users = get_users(league_id)
@@ -141,13 +286,13 @@ def main(kind: str):
     players_index = get_players_index()
     cards = build_matchup_cards(league_id, week, players_index, users, rosters)
 
-    # Prompt assembly
+    # Prompts
     if kind == "preview":
         sys_msg, usr_msg, start_d, end_d = assemble_preview_prompt(league, week, cards, tz_name)
     else:
         sys_msg, usr_msg, start_d, end_d = assemble_recap_prompt(league, week, cards, tz_name)
 
-    # LLM
+    # LLM → JSON
     content = openai_chat(
         cfg["openai"]["model"],
         sys_msg,
@@ -156,10 +301,15 @@ def main(kind: str):
         max_tokens=cfg["openai"]["max_tokens"],
         api_key=api_key,
     )
-    headline, body = split_headline(content)
-    md = to_markdown(kind, week, headline, body, start_d, end_d)
+    data = parse_json_or_die(content)
 
-    # Idempotency: skip if file already exists (covers double UTC crons for DST)
+    # Render Markdown
+    if kind == "preview":
+        md = md_preview_from_json(week, data, start_d, end_d)
+    else:
+        md = md_recap_from_json(week, data, start_d, end_d)
+
+    # Idempotency: skip if already exists (handles dual UTC crons around DST)
     already = output_path(output_dir, kind, week)
     if os.path.exists(already) and os.path.getsize(already) > 0:
         print(f"{kind.title()} already exists for week {week} at {already}; skipping.")
@@ -172,7 +322,9 @@ def main(kind: str):
 
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) != 2 or sys.argv[1] not in ("preview", "recap"):
         print("Usage: python -m scripts.run_bot [preview|recap]")
         raise SystemExit(1)
+
     main(sys.argv[1])
