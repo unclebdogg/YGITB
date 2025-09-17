@@ -1,25 +1,78 @@
-# GitHub Actions workflow for Fantasy Bot
-name: Run Fantasy Bot
+name: Fantasy Preview & Recap
 
-on:
-  push:
-    paths:
-      - 'fantasy-bot/**'
+oon:
+  schedule:
+    # Wednesday 9am Sydney = Tuesday 23:00 UTC (non-DST) or 22:00 UTC (DST)
+    - cron: "0 23 * * TUE"   # adjust for DST if needed
+    # Thursday 9am Sydney = Wednesday 23:00 UTC (non-DST) or 22:00 UTC (DST)
+    - cron: "0 23 * * WED"
   workflow_dispatch:
+    inputs:
+      kind:
+        description: "preview or recap"
+        required: false
+        default: "preview"
 
 jobs:
-  run-bot:
+  run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-      - name: Install dependencies
+          python-version: "3.11"
+
+      - name: Install deps
+        working-directory: fantasy-bot
         run: |
-          pip install -r fantasy-bot/requirements.txt
-      - name: Run Fantasy Bot
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Preview & Recap (timegated)
+        if: ${{ github.event_name != 'workflow_dispatch' }}
+        working-directory: fantasy-bot
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
+          TIMEZONE: Australia/Sydney
+          NFL_SEASON: ${{ secrets.NFL_SEASON }}
+          OUTPUT_DIR: reports
+          PREVIEW_DAY: Thursday
+          PREVIEW_HOUR: 9
+          RECAP_DAY: Wednesday
+          RECAP_HOUR: 9
         run: |
-          python fantasy-bot/scripts/run_bot.py
+          python -m scripts.run_bot preview || true
+          python -m scripts.run_bot recap || true
+
+      - name: Manual Run
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        working-directory: fantasy-bot
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
+          TIMEZONE: Australia/Sydney
+          NFL_SEASON: ${{ secrets.NFL_SEASON }}
+          OUTPUT_DIR: reports
+          PREVIEW_DAY: Thursday
+          PREVIEW_HOUR: 9
+          RECAP_DAY: Wednesday
+          RECAP_HOUR: 9
+          DISABLE_TIMEGATE: "1"
+        run: |
+          python -m scripts.run_bot ${{ github.event.inputs.kind }}
+
+      - name: Commit & push reports (if any changed)
+        run: |
+          git config user.name "${{ secrets.REPO_COMMIT_AUTHOR_NAME || 'Fantasy Bot' }}"
+          git config user.email "${{ secrets.REPO_COMMIT_AUTHOR_EMAIL || 'bot@example.com' }}"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(reports): update $(date -u +'%Y-%m-%dT%H:%MZ')"
+            git push
+          else
+            echo "No changes."
+          fi

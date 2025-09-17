@@ -1,0 +1,21 @@
+league:
+  id_env: SLEEPER_LEAGUE_ID
+  season_env: NFL_SEASON
+
+timezone_env: TIMEZONE
+
+output:
+  dir_env: OUTPUT_DIR
+
+schedule:
+  preview:
+    day_env: PREVIEW_DAY
+    hour_env: PREVIEW_HOUR
+  recap:
+    day_env: RECAP_DAY
+    hour_env: RECAP_HOUR
+
+openai:
+  model: gpt-4.1-mini   # fast & cheap; swap to gpt-4.1 or gpt-4o if you want
+  temperature: 0.6
+  max_tokens: 2000

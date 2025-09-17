@@ -1,0 +1,15 @@
+Write a league preview for Week {{week}} ({{start_date}}–{{end_date}} local time).
+
+League: {{league_name}}
+Teams (display_name → roster): {{teams_overview}}
+
+Matchups & projections:
+{{matchups_block}}
+
+Deliverables:
+1) Headline: 6–10 words.
+2) 3–5 Key Storylines (bullets).
+3) Matchup Capsules: One short paragraph per matchup.
+4) Fun kicker: One-liner to spark banter.
+
+Tone guide: witty, confident, no filler. Limit total to ~500–700 words.
