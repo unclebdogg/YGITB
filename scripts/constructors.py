@@ -72,15 +72,48 @@ def week_from_name(p: Path) -> int:
             return int(tok)
     return 0
 
-def build_user_maps(season_dir: Path):
+# ----------------------------
+# Name resolution (TEAM > user > id)
+# ----------------------------
+def build_name_maps(season_dir: Path):
+    """
+    Returns:
+      display_map: {user_id -> preferred name}  (TEAM name if available)
+      roster_to_owner: {roster_id -> user_id}
+    Pref order for display_map:
+      1) roster.metadata.team_name for that user's roster
+      2) user.display_name
+      3) user.username
+      4) user_id
+    """
     users = load_json(season_dir / "users.json", default=[])
     rosters = load_json(season_dir / "rosters.json", default=[])
-    users_map = {}
+
+    # base user map (display/username fallback)
+    base_user = {}
     for u in users:
-        disp = u.get("display_name") or (u.get("metadata") or {}).get("team_name") or u.get("user_id")
-        users_map[u["user_id"]] = disp
-    roster_to_owner = {r["roster_id"]: r["owner_id"] for r in rosters}
-    return users_map, roster_to_owner
+        uid = str(u.get("user_id"))
+        disp = (u.get("display_name") or "").strip()
+        uname = (u.get("username") or "").strip()
+        base_user[uid] = disp or uname or uid
+
+    # overlay with roster team_name per owner when available
+    roster_to_owner = {}
+    team_name_by_owner = {}
+    for r in rosters:
+        rid = r.get("roster_id")
+        uid = str(r.get("owner_id"))
+        roster_to_owner[rid] = uid
+        meta = r.get("metadata") or {}
+        tname = (meta.get("team_name") or "").strip()
+        if tname:
+            team_name_by_owner[uid] = tname
+
+    display_map = {}
+    for uid, fallback in base_user.items():
+        display_map[uid] = team_name_by_owner.get(uid, fallback)
+
+    return display_map, roster_to_owner
 
 def is_defense_code(pid) -> bool:
     # D/ST encoded as team code like "PHI","NYJ"
@@ -96,20 +129,22 @@ def get_player_info(players_index, pid):
     team = rec.get("team") or ""
     return (str(pid), name, pos, team)
 
-def settle_winners(bucket, users_map):
+def settle_winners(bucket, display_map):
     """
     bucket entries must be tuples:
       (user_id, display_name, points, player_id, player_name, position, team)
     - ignore entries with points <= 0
     - dedupe by (user_id, player_id) keeping highest points
     - return either all tied max (TIE_MODE='allow') or single winner (TIE_MODE='single')
+    Output winner dicts include `team_name` (preferred display).
     """
     best_by_key = {}
     for (uid, disp, pts, pid, pname, pos, team) in bucket:
         if pts is None or float(pts) <= 0:
             continue
         uid = str(uid)
-        disp = disp or users_map.get(uid, uid)
+        # resolve to preferred team display name
+        disp = (disp or "").strip() or display_map.get(uid, uid)
         pid = str(pid)
         pts = float(pts)
         key = (uid, pid)
@@ -132,7 +167,8 @@ def settle_winners(bucket, users_map):
     out = [
         {
             "user_id": uid,
-            "display_name": disp,
+            "display_name": disp,     # legacy field (kept)
+            "team_name": disp,        # NEW: explicit team display name
             "points": round(pts, 2),
             "player_id": pid,
             "player_name": pname,
@@ -144,7 +180,7 @@ def settle_winners(bucket, users_map):
     return out
 
 def compute_weekly(season_dir: Path):
-    users_map, roster_to_owner = build_user_maps(season_dir)
+    display_map, roster_to_owner = build_name_maps(season_dir)
     players_index = load_json(PLAYERS_INDEX_PATH, default={})
     mnf_schedule = load_json(MNF_PATH, default={})
 
@@ -184,7 +220,7 @@ def compute_weekly(season_dir: Path):
 
         for rid, info in by_roster.items():
             uid = roster_to_owner.get(rid)
-            disp = users_map.get(uid, uid)
+            disp = display_map.get(uid, uid)  # preferred team display name
             starters = info["starters"]
             pp = info["players_points"]
 
@@ -232,20 +268,20 @@ def compute_weekly(season_dir: Path):
             diff = float(w_pts) - float(l_pts)
             if diff > 0:
                 uid = roster_to_owner.get(winner_rid)
-                disp = users_map.get(uid, uid)
+                disp = display_map.get(uid, uid)
                 # No player entity; keep shape with blanks
                 largest_diff.append((uid, disp, diff, "", "", "", ""))
 
         winners = {
-            "mnf_best_player": settle_winners(mnf_bucket, users_map),
-            "top_qb":          settle_winners(top_qb, users_map),
-            "top_rb":          settle_winners(top_rb, users_map),
-            "top_wr":          settle_winners(top_wr, users_map),
-            "top_te":          settle_winners(top_te, users_map),
-            "top_dst":         settle_winners(top_dst, users_map),
-            "top_k":           settle_winners(top_k, users_map),
-            "top_bench":       settle_winners(top_bench, users_map),
-            "largest_diff":    settle_winners(largest_diff, users_map),
+            "mnf_best_player": settle_winners(mnf_bucket, display_map),
+            "top_qb":          settle_winners(top_qb, display_map),
+            "top_rb":          settle_winners(top_rb, display_map),
+            "top_wr":          settle_winners(top_wr, display_map),
+            "top_te":          settle_winners(top_te, display_map),
+            "top_dst":         settle_winners(top_dst, display_map),
+            "top_k":           settle_winners(top_k, display_map),
+            "top_bench":       settle_winners(top_bench, display_map),
+            "largest_diff":    settle_winners(largest_diff, display_map),
         }
 
         # Weekly points
@@ -263,7 +299,9 @@ def compute_weekly(season_dir: Path):
 
         weekly_points_by_user[str(wk)] = dict(week_totals)
         weekly_payloads[str(wk)] = {
-            "users": users_map,
+            # Both carry preferred TEAM names for clarity:
+            "users": display_map,                # {user_id: team_display}
+            "teams": display_map.copy(),         # optional alias used by renderers
             "winners": winners,
             "weekly_points": dict(sorted(week_totals.items(), key=lambda kv: kv[1], reverse=True)),
         }
@@ -275,6 +313,7 @@ def main():
         print(f"[constructors] Missing season dir: {SEASON_DIR}")
         write_json(DATA_ROOT / "constructors_standings.json", {
             "users": {},
+            "teams": {},
             "standings_all_time": {},
             "points_config": POINTS_CONFIG,
             "season": SEASON,
@@ -291,12 +330,14 @@ def main():
     cumulative = defaultdict(int)
     all_users = {}
     for wk, payload in weekly_payloads.items():
+        # both maps hold team display names
         all_users.update(payload.get("users", {}))
         for uid, pts in (payload.get("weekly_points") or {}).items():
             cumulative[uid] += int(pts)
 
     standings_out = {
-        "users": all_users,
+        "users": all_users,                         # {user_id: team_display}
+        "teams": all_users.copy(),                  # alias to make renderers simple
         "standings_all_time": dict(sorted(cumulative.items(), key=lambda kv: kv[1], reverse=True)),
         "points_config": POINTS_CONFIG,
         "season": SEASON,
