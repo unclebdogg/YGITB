@@ -1,0 +1,639 @@
+{
+  "1": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "points": 14.8,
+          "player_id": "6794",
+          "player_name": "Justin Jefferson",
+          "position": "WR",
+          "team": "MIN"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "points": 38.76,
+          "player_id": "4984",
+          "player_name": "Josh Allen",
+          "position": "QB",
+          "team": "BUF"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "1135367736106127360",
+          "display_name": "K309h",
+          "points": 29.2,
+          "player_id": "3198",
+          "player_name": "Derrick Henry",
+          "position": "RB",
+          "team": "BAL"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "points": 28.1,
+          "player_id": "9997",
+          "player_name": "Zay Flowers",
+          "position": "WR",
+          "team": "BAL"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "points": 15.3,
+          "player_id": "11604",
+          "player_name": "Brock Bowers",
+          "position": "TE",
+          "team": "LV"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1135367736106127360",
+          "display_name": "K309h",
+          "points": 16.0,
+          "player_id": "DEN",
+          "player_name": "DEN D/ST",
+          "position": "D/ST",
+          "team": "DEN"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "points": 15.0,
+          "player_id": "1945",
+          "player_name": "Chris Boswell",
+          "position": "K",
+          "team": "PIT"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "points": 29.52,
+          "player_id": "7591",
+          "player_name": "Justin Fields",
+          "position": "QB",
+          "team": "NYJ"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "points": 24.4,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
+    },
+    "weekly_points": {
+      "1261169947501920258": 2,
+      "1135367736106127360": 2,
+      "1243751191691665408": 2,
+      "1264781179337322496": 2,
+      "1264547596043563008": 1
+    }
+  },
+  "2": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "points": 18.78,
+          "player_id": "6797",
+          "player_name": "Justin Herbert",
+          "position": "QB",
+          "team": "LAC"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "94958437267816448",
+          "display_name": "naveb",
+          "points": 26.3,
+          "player_id": "4881",
+          "player_name": "Lamar Jackson",
+          "position": "QB",
+          "team": "BAL"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "474749566663520256",
+          "display_name": "mavbenson",
+          "points": 29.5,
+          "player_id": "6813",
+          "player_name": "Jonathan Taylor",
+          "position": "RB",
+          "team": "IND"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "points": 39.2,
+          "player_id": "7547",
+          "player_name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "team": "DET"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "points": 15.9,
+          "player_id": "7002",
+          "player_name": "Juwan Johnson",
+          "position": "TE",
+          "team": "NO"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "points": 16.0,
+          "player_id": "BAL",
+          "player_name": "BAL D/ST",
+          "position": "D/ST",
+          "team": "BAL"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "points": 23.0,
+          "player_id": "11533",
+          "player_name": "Brandon Aubrey",
+          "position": "K",
+          "team": "DAL"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "points": 33.96,
+          "player_id": "3163",
+          "player_name": "Jared Goff",
+          "position": "QB",
+          "team": "DET"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "points": 45.32,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
+    },
+    "weekly_points": {
+      "1261169947501920258": 2,
+      "1258237830732193792": 1,
+      "94958437267816448": 1,
+      "474749566663520256": 1,
+      "1264781179337322496": 1,
+      "1260776369839673345": 1,
+      "1261179461810798592": 1,
+      "1243751191691665408": 1
+    }
+  },
+  "3": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "4": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "5": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "6": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "7": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "8": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "9": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "10": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "11": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "12": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "13": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "14": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "15": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "16": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  },
+  "17": {
+    "users": {
+      "94958437267816448": "naveb",
+      "474749566663520256": "mavbenson",
+      "1135367736106127360": "K309h",
+      "1243751191691665408": "jacross2000",
+      "1258237830732193792": "nlredfern",
+      "1260776369839673345": "Leviathan35",
+      "1261169947501920258": "Tedwood",
+      "1261179461810798592": "Franc19",
+      "1264547596043563008": "StatutoryRaitests",
+      "1264781179337322496": "leejsv"
+    },
+    "winners": {
+      "mnf_best_player": [],
+      "top_qb": [],
+      "top_rb": [],
+      "top_wr": [],
+      "top_te": [],
+      "top_dst": [],
+      "top_k": [],
+      "top_bench": [],
+      "largest_diff": []
+    },
+    "weekly_points": {}
+  }
+}
