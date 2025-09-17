@@ -4,25 +4,18 @@ from typing import Any, Dict, List, Optional
 BASE = "https://api.sleeper.app/v1"
 
 
-# ----------------------------
-# HTTP helpers
-# ----------------------------
 def _get(url: str) -> Any:
     r = requests.get(url, timeout=30)
     r.raise_for_status()
     return r.json()
 
 
-# ----------------------------
-# Public API wrappers
-# ----------------------------
 def get_state() -> Dict[str, Any]:
-    """Sleeper global NFL state (season, week, etc.)."""
     return _get(f"{BASE}/state/nfl")
 
 
 def get_players_index() -> Dict[str, Any]:
-    """Large dictionary of players keyed by player_id (string)."""
+    # Big dict keyed by player_id -> { full_name, position, team, ... }
     return _get(f"{BASE}/players/nfl")
 
 
@@ -42,16 +35,11 @@ def get_matchups(league_id: str, week: int) -> List[Dict[str, Any]]:
     return _get(f"{BASE}/league/{league_id}/matchups/{week}")
 
 
-# ----------------------------
-# Local utilities
-# ----------------------------
 def users_map(users: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
-    """Map user_id (string) -> user obj."""
     return {str(u.get("user_id")): u for u in users}
 
 
 def rosters_map(rosters: List[Dict[str, Any]]) -> Dict[int, Dict[str, Any]]:
-    """Map roster_id (int) -> roster obj."""
     res: Dict[int, Dict[str, Any]] = {}
     for r in rosters:
         res[int(r.get("roster_id"))] = r
@@ -59,7 +47,6 @@ def rosters_map(rosters: List[Dict[str, Any]]) -> Dict[int, Dict[str, Any]]:
 
 
 def _record(roster: Optional[Dict[str, Any]]) -> Dict[str, Any]:
-    """Return record dict with wins/losses/ties and a short text field."""
     st = (roster or {}).get("settings") or {}
     w, l, t = int(st.get("wins", 0)), int(st.get("losses", 0)), int(st.get("ties", 0))
     text = f"{w}-{l}" if t == 0 else f"{w}-{l}-{t}"
@@ -67,16 +54,11 @@ def _record(roster: Optional[Dict[str, Any]]) -> Dict[str, Any]:
 
 
 def _team_display(roster: Optional[Dict[str, Any]], user: Optional[Dict[str, Any]]) -> str:
-    """
-    Prefer roster metadata team_name (what you see in the app).
-    Fallback to user's display_name/username, then 'Roster {id}'.
-    """
     if roster:
         meta = roster.get("metadata") or {}
         team_name = meta.get("team_name")
         if team_name and str(team_name).strip():
             return str(team_name).strip()
-
     if user:
         dn = user.get("display_name")
         if dn and str(dn).strip():
@@ -84,17 +66,12 @@ def _team_display(roster: Optional[Dict[str, Any]], user: Optional[Dict[str, Any
         un = user.get("username")
         if un and str(un).strip():
             return str(un).strip()
-
     if roster and roster.get("roster_id") is not None:
         return f"Roster {roster.get('roster_id')}"
     return "Unknown Team"
 
 
 def _points_or_projection(entry: Dict[str, Any]) -> Optional[float]:
-    """
-    For previews (before games), Sleeper often populates 'projected_points'.
-    For recaps (after games), 'points' will be present.
-    """
     val = entry.get("points")
     if val is None:
         val = entry.get("projected_points")
@@ -106,48 +83,55 @@ def _points_or_projection(entry: Dict[str, Any]) -> Optional[float]:
         return None
 
 
-# ----------------------------
-# Primary data shaper for write-ups
-# ----------------------------
+def _top_starters(entry: Dict[str, Any], players_index: Dict[str, Any], top_n: int = 2):
+    """
+    Return top N starters by fantasy points with (name,pos,nfl_team,points).
+    Uses entry['starters'] and entry['players_points'] from Sleeper matchups.
+    """
+    starters = entry.get("starters") or []  # list of player_ids in starting slots
+    ppoints = entry.get("players_points") or {}  # player_id -> pts
+    scored = []
+    for pid in starters:
+        pts = ppoints.get(pid)
+        if pts is None:
+            continue
+        info = players_index.get(pid) or {}
+        name = info.get("full_name") or info.get("first_name") or pid
+        pos = info.get("position") or "FLEX"
+        nfl = info.get("team") or "FA"
+        try:
+            scored.append({
+                "player": str(name),
+                "pos": str(pos),
+                "nfl_team": str(nfl),
+                "points": round(float(pts), 2)
+            })
+        except Exception:
+            continue
+    scored.sort(key=lambda x: x["points"], reverse=True)
+    return scored[:top_n]
+
+
 def build_matchup_cards(
     league_id: str,
     week: int,
-    players_index: Dict[str, Any],  # kept for future enrichment (starters, teams, etc.)
+    players_index: Dict[str, Any],
     users: List[Dict[str, Any]],
     rosters: List[Dict[str, Any]],
 ) -> List[Dict[str, Any]]:
-    """
-    Groups Sleeper matchups by matchup_id and returns a normalized list:
-
-    [
-      {
-        "home_name": str,            # roster metadata team name if set, else user display
-        "away_name": str,
-        "home_points": float|None,   # final or projected
-        "away_points": float|None,
-        "home_record": {wins,losses,ties,text},
-        "away_record": {wins,losses,ties,text},
-        # (room to add starters, top players, etc.)
-      },
-      ...
-    ]
-    """
     matchups = get_matchups(league_id, week)
     u_map = users_map(users)
     r_map = rosters_map(rosters)
 
-    # group entries by matchup_id
     groups: Dict[int, List[Dict[str, Any]]] = {}
     for m in matchups:
         mid = m.get("matchup_id")
         if mid is None:
-            # some leagues/entries can be stray; skip
             continue
         groups.setdefault(int(mid), []).append(m)
 
     cards: List[Dict[str, Any]] = []
     for mid, entries in groups.items():
-        # Expect exactly two entries per matchup; skip odd/byes gracefully
         if len(entries) != 2:
             continue
 
@@ -157,15 +141,15 @@ def build_matchup_cards(
         u1 = u_map.get(str((r1 or {}).get("owner_id")))
         u2 = u_map.get(str((r2 or {}).get("owner_id")))
 
-        cards.append(
-            {
-                "home_name": _team_display(r1, u1),
-                "away_name": _team_display(r2, u2),
-                "home_points": _points_or_projection(e1),
-                "away_points": _points_or_projection(e2),
-                "home_record": _record(r1),
-                "away_record": _record(r2),
-            }
-        )
+        cards.append({
+            "home_name": _team_display(r1, u1),
+            "away_name": _team_display(r2, u2),
+            "home_points": _points_or_projection(e1),
+            "away_points": _points_or_projection(e2),
+            "home_record": _record(r1),
+            "away_record": _record(r2),
+            "home_stars": _top_starters(e1, players_index, top_n=2),
+            "away_stars": _top_starters(e2, players_index, top_n=2),
+        })
 
     return cards
