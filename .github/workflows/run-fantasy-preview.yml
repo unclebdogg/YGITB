@@ -1,0 +1,69 @@
+name: Fantasy Preview (YGITB + XFL) – Thursdays AU
+
+on:
+  schedule:
+    # Sydney 09:00 Thursday
+    # AEST (UTC+10) → Wed 23:00 UTC
+    # AEDT (UTC+11) → Wed 22:00 UTC
+    - cron: "0 22 * * WED"
+    - cron: "0 23 * * WED"
+  workflow_dispatch: {}
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - name: ygitb
+            league_id: "1260643183704932352"
+            outdir: "reports/ygitb"
+          - name: xfl
+            league_id: "1238082932220891136"
+            outdir: "reports/xfl"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        working-directory: fantasy-bot
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Env sanity check
+        working-directory: fantasy-bot
+        env:
+          SLEEPER_LEAGUE_ID: ${{ matrix.league_id }}
+        run: |
+          [ -z "${SLEEPER_LEAGUE_ID}" ] && echo "Missing league id" && exit 1 || echo "League ID present."
+
+      - name: Run PREVIEW (coming week)
+        working-directory: fantasy-bot
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SLEEPER_LEAGUE_ID: ${{ matrix.league_id }}
+          TIMEZONE: Australia/Sydney
+          OUTPUT_DIR: ${{ matrix.outdir }}
+          DISABLE_TIMEGATE: "1"
+        run: |
+          echo "Preview for ${{ matrix.name }} -> ${{ matrix.outdir }}"
+          python -m scripts.run_bot preview
+
+      - name: Commit & push reports (if any changed)
+        run: |
+          git config user.name "${{ secrets.REPO_COMMIT_AUTHOR_NAME || 'Fantasy Bot' }}"
+          git config user.email "${{ secrets.REPO_COMMIT_AUTHOR_EMAIL || 'bot@example.com' }}"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(preview): update ${{ matrix.name }} $(date -u +'%Y-%m-%dT%H:%MZ')"
+            git push
+          else
+            echo "No changes."
+          fi
