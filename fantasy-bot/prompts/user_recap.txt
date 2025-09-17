@@ -1,14 +1,7 @@
-Write a league recap for Week {{week}} ({{start_date}}–{{end_date}} local time).
-
 League: {{league_name}}
-Final results:
+Week: {{week}} ({{start_date}}–{{end_date}} local)
+
+Results & stars (raw data):
 {{results_block}}
 
-Leaders & standouts: {{leaders_block}}
-
-Deliverables:
-1) Headline: 6–10 words.
-2) 3–5 Moments That Mattered (bullets).
-3) Game-by-game mini recaps (1–2 sentences each).
-4) Power pulse: 3 quick notes on momentum/trends.
-Total ~450–650 words. Keep the banter flowing, not mean.
+Use team names and records as given. Use the star lists to explain outcomes.
