@@ -62,28 +62,32 @@ jobs:
           echo "Preview for ${{ matrix.name }} -> ${{ matrix.outdir }}"
           python -m scripts.run_bot preview
 
-      - name: Commit & push reports (if any changed)
+           - name: Commit & push reports (if any changed)
         env:
           BRANCH_NAME: ${{ github.ref_name }}
         run: |
-          # Configure author
+          # Author
           git config user.name "${{ secrets.REPO_COMMIT_AUTHOR_NAME || 'Fantasy Bot' }}"
           git config user.email "${{ secrets.REPO_COMMIT_AUTHOR_EMAIL || 'bot@example.com' }}"
 
-          # Only stage report files (avoid __pycache__ etc.)
+          # Remove noisy build artifacts (e.g., __pycache__)
+          find . -name '__pycache__' -type d -prune -exec rm -rf {} +
+
+          # Stage only report outputs
           git add -A fantasy-bot/reports
 
-          # Exit early if nothing staged
+          # Exit if nothing to commit
           if git diff --cached --quiet; then
             echo "No report changes to commit."
             exit 0
           fi
 
-          git commit -m "chore(preview): update ${{ matrix.name }} $(date -u +'%Y-%m-%dT%H:%MZ')"
+          git commit -m "chore(${GITHUB_WORKFLOW%% *}): update ${{ matrix.name }} $(date -u +'%Y-%m-%dT%H:%MZ')"
 
-          # Rebase on latest remote before pushing
+          # Rebase on latest remote; --autostash handles any remaining local noise
           git fetch origin
           BRANCH="${BRANCH_NAME:-main}"
-          git pull --rebase origin "$BRANCH" || (echo "Rebase failed; aborting" && git rebase --abort && exit 1)
+          git pull --rebase --autostash origin "$BRANCH" || (echo "Rebase failed; aborting"; git rebase --abort || true; exit 1)
 
+          # Push
           git push origin HEAD:"$BRANCH"
