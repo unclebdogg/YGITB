@@ -1,6 +1,6 @@
 name: Fantasy Preview & Recap
 
-oon:
+on:
   schedule:
     # Wednesday 9am Sydney = Tuesday 23:00 UTC (non-DST) or 22:00 UTC (DST)
     - cron: "0 23 * * TUE"   # adjust for DST if needed
