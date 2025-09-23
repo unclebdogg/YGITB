@@ -314,17 +314,124 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "94958437267816448",
+          "display_name": "naveb",
+          "team_name": "naveb",
+          "points": 27.02,
+          "player_id": "4881",
+          "player_name": "Lamar Jackson",
+          "position": "QB",
+          "team": "BAL"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 29.12,
+          "player_id": "11560",
+          "player_name": "Caleb Williams",
+          "position": "QB",
+          "team": "CHI"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "474749566663520256",
+          "display_name": "mavbenson",
+          "team_name": "mavbenson",
+          "points": 32.8,
+          "player_id": "6813",
+          "player_name": "Jonathan Taylor",
+          "position": "RB",
+          "team": "IND"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 24.4,
+          "player_id": "8146",
+          "player_name": "Garrett Wilson",
+          "position": "WR",
+          "team": "NYJ"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "team_name": "leejsv",
+          "points": 21.2,
+          "player_id": "8110",
+          "player_name": "Jake Ferguson",
+          "position": "TE",
+          "team": "DAL"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 20.0,
+          "player_id": "PIT",
+          "player_name": "PIT D/ST",
+          "position": "D/ST",
+          "team": "PIT"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 21.0,
+          "player_id": "6650",
+          "player_name": "Chase McLaughlin",
+          "position": "K",
+          "team": "TB"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 29.4,
+          "player_id": "5892",
+          "player_name": "David Montgomery",
+          "position": "RB",
+          "team": "DET"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 45.06,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1260776369839673345": 2,
+      "1243751191691665408": 2,
+      "94958437267816448": 1,
+      "474749566663520256": 1,
+      "1264781179337322496": 1,
+      "1264547596043563008": 1,
+      "1261179461810798592": 1
+    }
   },
   "4": {
     "users": {
