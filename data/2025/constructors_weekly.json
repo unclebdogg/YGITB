@@ -459,17 +459,121 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "1135367736106127360",
+          "display_name": "K309h",
+          "team_name": "K309h",
+          "points": 25.74,
+          "player_id": "11563",
+          "player_name": "Bo Nix",
+          "position": "QB",
+          "team": "DEN"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 27.3,
+          "player_id": "4046",
+          "player_name": "Patrick Mahomes",
+          "position": "QB",
+          "team": "KC"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 33.5,
+          "player_id": "12527",
+          "player_name": "Ashton Jeanty",
+          "position": "RB",
+          "team": "LV"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 36.0,
+          "player_id": "9493",
+          "player_name": "Puka Nacua",
+          "position": "WR",
+          "team": "LAR"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1135367736106127360",
+          "display_name": "K309h",
+          "team_name": "K309h",
+          "points": 18.3,
+          "player_id": "12518",
+          "player_name": "Tyler Warren",
+          "position": "TE",
+          "team": "IND"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 20.0,
+          "player_id": "DET",
+          "player_name": "DET D/ST",
+          "position": "D/ST",
+          "team": "DET"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 17.0,
+          "player_id": "6650",
+          "player_name": "Chase McLaughlin",
+          "position": "K",
+          "team": "TB"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 30.96,
+          "player_id": "3294",
+          "player_name": "Dak Prescott",
+          "position": "QB",
+          "team": "DAL"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 49.32,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1243751191691665408": 5,
+      "1135367736106127360": 2,
+      "1261179461810798592": 1,
+      "1258237830732193792": 1
+    }
   },
   "5": {
     "users": {
