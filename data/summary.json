@@ -16,16 +16,17 @@
         "naveb": {
           "StatutoryRaitests": 2,
           "Tedwood": 2,
-          "leejsv": 2,
           "nlredfern": 2,
           "Franc19": 2,
           "Leviathan35": 1,
           "mavbenson": 1,
-          "jacross2000": 1
+          "jacross2000": 1,
+          "leejsv": 1
         },
         "leejsv": {
           "mavbenson": 1,
-          "K309h": 1
+          "K309h": 1,
+          "naveb": 1
         },
         "Leviathan35": {
           "Franc19": 2,
@@ -44,6 +45,7 @@
         },
         "mavbenson": {
           "naveb": 1,
+          "K309h": 1,
           "Franc19": 2,
           "Leviathan35": 2,
           "Tedwood": 2,
@@ -71,7 +73,6 @@
           "mavbenson": 1
         },
         "K309h": {
-          "mavbenson": 2,
           "StatutoryRaitests": 2,
           "naveb": 2,
           "nlredfern": 2,
@@ -79,20 +80,21 @@
           "jacross2000": 1,
           "Leviathan35": 1,
           "Franc19": 1,
-          "leejsv": 1
+          "leejsv": 1,
+          "mavbenson": 1
         }
       },
       "team_points": {
-        "K309h": 478.02,
-        "jacross2000": 555.36,
-        "naveb": 483.86,
-        "StatutoryRaitests": 439.86,
-        "mavbenson": 432.85999999999996,
-        "leejsv": 484.70000000000005,
-        "Leviathan35": 465.82000000000005,
-        "Franc19": 429.26000000000005,
-        "nlredfern": 481.56,
-        "Tedwood": 441.26
+        "K309h": 601.9,
+        "jacross2000": 717.88,
+        "naveb": 598.24,
+        "StatutoryRaitests": 595.26,
+        "mavbenson": 562.18,
+        "leejsv": 607.72,
+        "Leviathan35": 604.36,
+        "Franc19": 527.36,
+        "nlredfern": 579.7,
+        "Tedwood": 521.5799999999999
       },
       "weekly_highs": [
         {
@@ -218,32 +220,32 @@
         {
           "season": "2025",
           "week": "05",
-          "team": "K309h",
-          "points": 0.0
+          "team": "mavbenson",
+          "points": 129.32
         },
         {
           "season": "2025",
           "week": "05",
-          "team": "naveb",
-          "points": 0.0
+          "team": "leejsv",
+          "points": 123.02
         },
         {
           "season": "2025",
           "week": "05",
           "team": "jacross2000",
-          "points": 0.0
+          "points": 162.52
         },
         {
           "season": "2025",
           "week": "05",
           "team": "Leviathan35",
-          "points": 0.0
+          "points": 138.54
         },
         {
           "season": "2025",
           "week": "05",
           "team": "nlredfern",
-          "points": 0.0
+          "points": 98.14
         },
         {
           "season": "2025",
@@ -624,16 +626,17 @@
       "naveb": {
         "StatutoryRaitests": 2,
         "Tedwood": 2,
-        "leejsv": 2,
         "nlredfern": 2,
         "Franc19": 2,
         "Leviathan35": 1,
         "mavbenson": 1,
-        "jacross2000": 1
+        "jacross2000": 1,
+        "leejsv": 1
       },
       "leejsv": {
         "mavbenson": 1,
-        "K309h": 1
+        "K309h": 1,
+        "naveb": 1
       },
       "Leviathan35": {
         "Franc19": 2,
@@ -652,6 +655,7 @@
       },
       "mavbenson": {
         "naveb": 1,
+        "K309h": 1,
         "Franc19": 2,
         "Leviathan35": 2,
         "Tedwood": 2,
@@ -679,7 +683,6 @@
         "mavbenson": 1
       },
       "K309h": {
-        "mavbenson": 2,
         "StatutoryRaitests": 2,
         "naveb": 2,
         "nlredfern": 2,
@@ -687,20 +690,21 @@
         "jacross2000": 1,
         "Leviathan35": 1,
         "Franc19": 1,
-        "leejsv": 1
+        "leejsv": 1,
+        "mavbenson": 1
       }
     },
     "team_points": {
-      "K309h": 478.02,
-      "jacross2000": 555.36,
-      "naveb": 483.86,
-      "StatutoryRaitests": 439.86,
-      "mavbenson": 432.85999999999996,
-      "leejsv": 484.70000000000005,
-      "Leviathan35": 465.82000000000005,
-      "Franc19": 429.26000000000005,
-      "nlredfern": 481.56,
-      "Tedwood": 441.26
+      "K309h": 601.9,
+      "jacross2000": 717.88,
+      "naveb": 598.24,
+      "StatutoryRaitests": 595.26,
+      "mavbenson": 562.18,
+      "leejsv": 607.72,
+      "Leviathan35": 604.36,
+      "Franc19": 527.36,
+      "nlredfern": 579.7,
+      "Tedwood": 521.5799999999999
     },
     "weekly_highs": [
       {
@@ -708,6 +712,12 @@
         "week": "04",
         "team": "jacross2000",
         "points": 183.3
+      },
+      {
+        "season": "2025",
+        "week": "05",
+        "team": "jacross2000",
+        "points": 162.52
       },
       {
         "season": "2025",
@@ -729,6 +739,12 @@
       },
       {
         "season": "2025",
+        "week": "05",
+        "team": "Leviathan35",
+        "points": 138.54
+      },
+      {
+        "season": "2025",
         "week": "02",
         "team": "mavbenson",
         "points": 134.04
@@ -747,6 +763,12 @@
       },
       {
         "season": "2025",
+        "week": "05",
+        "team": "mavbenson",
+        "points": 129.32
+      },
+      {
+        "season": "2025",
         "week": "02",
         "team": "Franc19",
         "points": 127.94
@@ -756,6 +778,12 @@
         "week": "02",
         "team": "Tedwood",
         "points": 124.22
+      },
+      {
+        "season": "2025",
+        "week": "05",
+        "team": "leejsv",
+        "points": 123.02
       },
       {
         "season": "2025",
@@ -826,32 +854,8 @@
       {
         "season": "2025",
         "week": "05",
-        "team": "K309h",
-        "points": 0.0
-      },
-      {
-        "season": "2025",
-        "week": "05",
-        "team": "naveb",
-        "points": 0.0
-      },
-      {
-        "season": "2025",
-        "week": "05",
-        "team": "jacross2000",
-        "points": 0.0
-      },
-      {
-        "season": "2025",
-        "week": "05",
-        "team": "Leviathan35",
-        "points": 0.0
-      },
-      {
-        "season": "2025",
-        "week": "05",
         "team": "nlredfern",
-        "points": 0.0
+        "points": 98.14
       },
       {
         "season": "2025",

@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 4
-_Generated: 2025-09-30 23:27 UTC_
+_Generated: 2025-10-07 23:18 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -39,15 +39,15 @@ _Generated: 2025-09-30 23:27 UTC_
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | jacross2000 | 10 |
-| 2 | Tedwood | 4 |
-| 3 | K309h | 4 |
-| 4 | leejsv | 4 |
-| 5 | Leviathan35 | 3 |
-| 6 | Franc19 | 3 |
-| 7 | StatutoryRaitests | 2 |
-| 8 | nlredfern | 2 |
-| 9 | naveb | 2 |
+| 1 | jacross2000 | 12 |
+| 2 | leejsv | 5 |
+| 3 | Leviathan35 | 5 |
+| 4 | Tedwood | 4 |
+| 5 | K309h | 4 |
+| 6 | Franc19 | 4 |
+| 7 | StatutoryRaitests | 3 |
+| 8 | nlredfern | 3 |
+| 9 | naveb | 3 |
 | 10 | mavbenson | 2 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1

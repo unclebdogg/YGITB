@@ -601,17 +601,124 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 26.72,
+          "player_id": "4046",
+          "player_name": "Patrick Mahomes",
+          "position": "QB",
+          "team": "KC"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 26.72,
+          "player_id": "4046",
+          "player_name": "Patrick Mahomes",
+          "position": "QB",
+          "team": "KC"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 32.4,
+          "player_id": "7021",
+          "player_name": "Rico Dowdle",
+          "position": "RB",
+          "team": "CAR"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "94958437267816448",
+          "display_name": "naveb",
+          "team_name": "naveb",
+          "points": 31.3,
+          "player_id": "12514",
+          "player_name": "Emeka Egbuka",
+          "position": "WR",
+          "team": "TB"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "team_name": "leejsv",
+          "points": 23.9,
+          "player_id": "8110",
+          "player_name": "Jake Ferguson",
+          "position": "TE",
+          "team": "DAL"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 17.0,
+          "player_id": "IND",
+          "player_name": "IND D/ST",
+          "position": "D/ST",
+          "team": "IND"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 12.0,
+          "player_id": "6650",
+          "player_name": "Chase McLaughlin",
+          "position": "K",
+          "team": "TB"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 28.28,
+          "player_id": "3294",
+          "player_name": "Dak Prescott",
+          "position": "QB",
+          "team": "DAL"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 58.22,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1243751191691665408": 2,
+      "1260776369839673345": 2,
+      "94958437267816448": 1,
+      "1264781179337322496": 1,
+      "1264547596043563008": 1,
+      "1261179461810798592": 1,
+      "1258237830732193792": 1
+    }
   },
   "6": {
     "users": {
