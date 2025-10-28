@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 7
-_Generated: 2025-10-21 23:19 UTC_
+_Generated: 2025-10-28 23:19 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -43,14 +43,14 @@ _Generated: 2025-10-21 23:19 UTC_
 | Rank | Manager | Points |
 |---|---|---|
 | 1 | jacross2000 | 13 |
-| 2 | Tedwood | 7 |
-| 3 | Leviathan35 | 7 |
-| 4 | K309h | 6 |
-| 5 | nlredfern | 6 |
-| 6 | Franc19 | 6 |
-| 7 | leejsv | 5 |
-| 8 | mavbenson | 5 |
-| 9 | StatutoryRaitests | 4 |
-| 10 | naveb | 4 |
+| 2 | Franc19 | 9 |
+| 3 | Leviathan35 | 8 |
+| 4 | Tedwood | 7 |
+| 5 | leejsv | 7 |
+| 6 | mavbenson | 7 |
+| 7 | K309h | 6 |
+| 8 | nlredfern | 6 |
+| 9 | naveb | 5 |
+| 10 | StatutoryRaitests | 4 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1
