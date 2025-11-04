@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 13
-_Generated: 2025-10-28 23:19 UTC_
+_Generated: 2025-11-04 23:19 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -23,27 +23,27 @@ _Generated: 2025-10-28 23:19 UTC_
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Franc19 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 9 |
 | K309h | 2 | 0 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 6 |
-| Leviathan35 | 0 | 1 | 2 | 0 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 8 |
-| StatutoryRaitests | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 |
-| Tedwood | 2 | 2 | 0 | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 7 |
+| Leviathan35 | 0 | 1 | 2 | 0 | 2 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 9 |
+| StatutoryRaitests | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 6 |
+| Tedwood | 2 | 2 | 0 | 0 | 0 | 1 | 2 | 0 | 3 | 0 | 0 | 0 | 0 | 10 |
 | jacross2000 | 2 | 1 | 2 | 5 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 13 |
-| leejsv | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 7 |
-| mavbenson | 0 | 1 | 1 | 0 | 0 | 1 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 7 |
-| naveb | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 5 |
+| leejsv | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 2 | 1 | 0 | 0 | 0 | 0 | 8 |
+| mavbenson | 0 | 1 | 1 | 0 | 0 | 1 | 2 | 2 | 1 | 0 | 0 | 0 | 0 | 8 |
+| naveb | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 6 |
 | nlredfern | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 6 |
 
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
 | 1 | jacross2000 | 13 |
-| 2 | Franc19 | 9 |
-| 3 | Leviathan35 | 8 |
-| 4 | Tedwood | 7 |
-| 5 | leejsv | 7 |
-| 6 | mavbenson | 7 |
+| 2 | Tedwood | 10 |
+| 3 | Leviathan35 | 9 |
+| 4 | Franc19 | 9 |
+| 5 | leejsv | 8 |
+| 6 | mavbenson | 8 |
 | 7 | K309h | 6 |
-| 8 | nlredfern | 6 |
-| 9 | naveb | 5 |
-| 10 | StatutoryRaitests | 4 |
+| 8 | StatutoryRaitests | 6 |
+| 9 | nlredfern | 6 |
+| 10 | naveb | 6 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1

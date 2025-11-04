@@ -1180,17 +1180,123 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "team_name": "leejsv",
+          "points": 22.6,
+          "player_id": "11628",
+          "player_name": "Marvin Harrison",
+          "position": "WR",
+          "team": "ARI"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 28.82,
+          "player_id": "4984",
+          "player_name": "Josh Allen",
+          "position": "QB",
+          "team": "BUF"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 34.3,
+          "player_id": "4034",
+          "player_name": "Christian McCaffrey",
+          "position": "RB",
+          "team": "SF"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 38.8,
+          "player_id": "8112",
+          "player_name": "Drake London",
+          "position": "WR",
+          "team": "ATL"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 43.3,
+          "player_id": "11604",
+          "player_name": "Brock Bowers",
+          "position": "TE",
+          "team": "LV"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 20.0,
+          "player_id": "PIT",
+          "player_name": "PIT D/ST",
+          "position": "D/ST",
+          "team": "PIT"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "474749566663520256",
+          "display_name": "mavbenson",
+          "team_name": "mavbenson",
+          "points": 12.0,
+          "player_id": "5189",
+          "player_name": "Eddy Pineiro",
+          "position": "K",
+          "team": "SF"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "94958437267816448",
+          "display_name": "naveb",
+          "team_name": "naveb",
+          "points": 33.1,
+          "player_id": "6801",
+          "player_name": "Tee Higgins",
+          "position": "WR",
+          "team": "CIN"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 32.2,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1261169947501920258": 3,
+      "1264547596043563008": 2,
+      "1264781179337322496": 1,
+      "1260776369839673345": 1,
+      "474749566663520256": 1,
+      "94958437267816448": 1
+    }
   },
   "10": {
     "users": {
