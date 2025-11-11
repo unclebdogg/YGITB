@@ -1324,17 +1324,123 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "1135367736106127360",
+          "display_name": "K309h",
+          "team_name": "K309h",
+          "points": 19.7,
+          "player_id": "5850",
+          "player_name": "Josh Jacobs",
+          "position": "RB",
+          "team": "GB"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 26.28,
+          "player_id": "12508",
+          "player_name": "Jaxson Dart",
+          "position": "QB",
+          "team": "NYG"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "474749566663520256",
+          "display_name": "mavbenson",
+          "team_name": "mavbenson",
+          "points": 49.6,
+          "player_id": "6813",
+          "player_name": "Jonathan Taylor",
+          "position": "RB",
+          "team": "IND"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 24.4,
+          "player_id": "8112",
+          "player_name": "Drake London",
+          "position": "WR",
+          "team": "ATL"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 27.7,
+          "player_id": "8130",
+          "player_name": "Trey McBride",
+          "position": "TE",
+          "team": "ARI"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 23.0,
+          "player_id": "SEA",
+          "player_name": "SEA D/ST",
+          "position": "D/ST",
+          "team": "SEA"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 15.0,
+          "player_id": "2747",
+          "player_name": "Jason Myers",
+          "position": "K",
+          "team": "SEA"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 26.9,
+          "player_id": "421",
+          "player_name": "Matthew Stafford",
+          "position": "QB",
+          "team": "LAR"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 70.66,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1260776369839673345": 3,
+      "1261179461810798592": 2,
+      "1135367736106127360": 1,
+      "474749566663520256": 1,
+      "1264547596043563008": 1,
+      "1258237830732193792": 1
+    }
   },
   "11": {
     "users": {
