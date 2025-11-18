@@ -1468,17 +1468,124 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "94958437267816448",
+          "display_name": "naveb",
+          "team_name": "naveb",
+          "points": 29.4,
+          "player_id": "8137",
+          "player_name": "George Pickens",
+          "position": "WR",
+          "team": "DAL"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 42.68,
+          "player_id": "4984",
+          "player_name": "Josh Allen",
+          "position": "QB",
+          "team": "BUF"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 35.1,
+          "player_id": "4034",
+          "player_name": "Christian McCaffrey",
+          "position": "RB",
+          "team": "SF"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "team_name": "leejsv",
+          "points": 33.5,
+          "player_id": "10232",
+          "player_name": "Michael Wilson",
+          "position": "WR",
+          "team": "ARI"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 27.5,
+          "player_id": "8130",
+          "player_name": "Trey McBride",
+          "position": "TE",
+          "team": "ARI"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 22.0,
+          "player_id": "PIT",
+          "player_name": "PIT D/ST",
+          "position": "D/ST",
+          "team": "PIT"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 15.0,
+          "player_id": "2747",
+          "player_name": "Jason Myers",
+          "position": "K",
+          "team": "SEA"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 24.32,
+          "player_id": "3294",
+          "player_name": "Dak Prescott",
+          "position": "QB",
+          "team": "DAL"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 71.16,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1260776369839673345": 3,
+      "94958437267816448": 1,
+      "1261169947501920258": 1,
+      "1264781179337322496": 1,
+      "1261179461810798592": 1,
+      "1264547596043563008": 1,
+      "1258237830732193792": 1
+    }
   },
   "12": {
     "users": {
