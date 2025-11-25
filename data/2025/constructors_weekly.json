@@ -1613,17 +1613,123 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 27.2,
+          "player_id": "4034",
+          "player_name": "Christian McCaffrey",
+          "position": "RB",
+          "team": "SF"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 30.86,
+          "player_id": "6904",
+          "player_name": "Jalen Hurts",
+          "position": "QB",
+          "team": "PHI"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "94958437267816448",
+          "display_name": "naveb",
+          "team_name": "naveb",
+          "points": 55.4,
+          "player_id": "9221",
+          "player_name": "Jahmyr Gibbs",
+          "position": "RB",
+          "team": "DET"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1135367736106127360",
+          "display_name": "K309h",
+          "team_name": "K309h",
+          "points": 37.1,
+          "player_id": "9488",
+          "player_name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "team": "SEA"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 16.9,
+          "player_id": "8130",
+          "player_name": "Trey McBride",
+          "position": "TE",
+          "team": "ARI"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 18.0,
+          "player_id": "CLE",
+          "player_name": "CLE D/ST",
+          "position": "D/ST",
+          "team": "CLE"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "team_name": "leejsv",
+          "points": 16.0,
+          "player_id": "4227",
+          "player_name": "Harrison Butker",
+          "position": "K",
+          "team": "KC"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 22.92,
+          "player_id": "421",
+          "player_name": "Matthew Stafford",
+          "position": "QB",
+          "team": "LAR"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "team_name": "leejsv",
+          "points": 68.32,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1261179461810798592": 3,
+      "1264781179337322496": 2,
+      "1260776369839673345": 1,
+      "94958437267816448": 1,
+      "1135367736106127360": 1,
+      "1261169947501920258": 1
+    }
   },
   "13": {
     "users": {
