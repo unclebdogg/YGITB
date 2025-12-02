@@ -1757,17 +1757,123 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "474749566663520256",
+          "display_name": "mavbenson",
+          "team_name": "mavbenson",
+          "points": 20.48,
+          "player_id": "11564",
+          "player_name": "Drake Maye",
+          "position": "QB",
+          "team": "NE"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 29.44,
+          "player_id": "4046",
+          "player_name": "Patrick Mahomes",
+          "position": "QB",
+          "team": "KC"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 30.3,
+          "player_id": "9509",
+          "player_name": "Bijan Robinson",
+          "position": "RB",
+          "team": "ATL"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 35.2,
+          "player_id": "5859",
+          "player_name": "A.J. Brown",
+          "position": "WR",
+          "team": "PHI"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 22.3,
+          "player_id": "11604",
+          "player_name": "Brock Bowers",
+          "position": "TE",
+          "team": "LV"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 32.0,
+          "player_id": "SEA",
+          "player_name": "SEA D/ST",
+          "position": "D/ST",
+          "team": "SEA"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 19.0,
+          "player_id": "2747",
+          "player_name": "Jason Myers",
+          "position": "K",
+          "team": "SEA"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "team_name": "leejsv",
+          "points": 25.76,
+          "player_id": "6804",
+          "player_name": "Jordan Love",
+          "position": "QB",
+          "team": "GB"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 31.9,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1258237830732193792": 3,
+      "1243751191691665408": 2,
+      "474749566663520256": 1,
+      "1261169947501920258": 1,
+      "1260776369839673345": 1,
+      "1264781179337322496": 1
+    }
   },
   "14": {
     "users": {
