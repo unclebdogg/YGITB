@@ -1901,17 +1901,122 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 20.0,
+          "player_id": "8259",
+          "player_name": "Cameron Dicker",
+          "position": "K",
+          "team": "LAC"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 37.84,
+          "player_id": "4984",
+          "player_name": "Josh Allen",
+          "position": "QB",
+          "team": "BUF"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "94958437267816448",
+          "display_name": "naveb",
+          "team_name": "naveb",
+          "points": 37.0,
+          "player_id": "9221",
+          "player_name": "Jahmyr Gibbs",
+          "position": "RB",
+          "team": "DET"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "team_name": "leejsv",
+          "points": 37.2,
+          "player_id": "10232",
+          "player_name": "Michael Wilson",
+          "position": "WR",
+          "team": "ARI"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 15.8,
+          "player_id": "5022",
+          "player_name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 20.0,
+          "player_id": "SEA",
+          "player_name": "SEA D/ST",
+          "position": "D/ST",
+          "team": "SEA"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 24.0,
+          "player_id": "11533",
+          "player_name": "Brandon Aubrey",
+          "position": "K",
+          "team": "DAL"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 26.1,
+          "player_id": "11586",
+          "player_name": "Blake Corum",
+          "position": "RB",
+          "team": "LAR"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 72.54,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1261169947501920258": 3,
+      "1264547596043563008": 2,
+      "1258237830732193792": 2,
+      "94958437267816448": 1,
+      "1264781179337322496": 1
+    }
   },
   "15": {
     "users": {

@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 12
-_Generated: 2025-12-02 23:20 UTC_
+_Generated: 2025-12-09 23:22 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -42,14 +42,14 @@ _Generated: 2025-12-02 23:20 UTC_
 | Rank | Manager | Points |
 |---|---|---|
 | 1 | Leviathan35 | 17 |
-| 2 | jacross2000 | 15 |
-| 3 | Franc19 | 15 |
-| 4 | Tedwood | 13 |
-| 5 | leejsv | 12 |
-| 6 | nlredfern | 11 |
-| 7 | mavbenson | 10 |
-| 8 | K309h | 8 |
-| 9 | StatutoryRaitests | 8 |
-| 10 | naveb | 8 |
+| 2 | Tedwood | 16 |
+| 3 | jacross2000 | 15 |
+| 4 | Franc19 | 15 |
+| 5 | leejsv | 13 |
+| 6 | nlredfern | 13 |
+| 7 | StatutoryRaitests | 10 |
+| 8 | mavbenson | 10 |
+| 9 | naveb | 9 |
+| 10 | K309h | 8 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1
