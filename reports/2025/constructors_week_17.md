@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 17
-_Generated: 2025-12-09 23:22 UTC_
+_Generated: 2025-12-16 23:21 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -21,29 +21,29 @@ _Generated: 2025-12-09 23:22 UTC_
 ## Week-by-Week Scoreboard
 | Manager | Wk 1 | Wk 2 | Wk 3 | Wk 4 | Wk 5 | Wk 6 | Wk 7 | Wk 8 | Wk 9 | Wk 10 | Wk 11 | Wk 12 | Wk 13 | Wk 14 | Wk 15 | Wk 16 | Wk 17 | Total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Franc19 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 0 | 2 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 15 |
-| K309h | 2 | 0 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 8 |
-| Leviathan35 | 0 | 1 | 2 | 0 | 2 | 1 | 1 | 1 | 1 | 3 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 17 |
-| StatutoryRaitests | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 2 | 1 | 1 | 0 | 0 | 2 | 0 | 0 | 0 | 10 |
-| Tedwood | 2 | 2 | 0 | 0 | 0 | 1 | 2 | 0 | 3 | 0 | 1 | 1 | 1 | 3 | 0 | 0 | 0 | 16 |
+| Franc19 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 0 | 2 | 1 | 3 | 0 | 0 | 1 | 0 | 0 | 16 |
+| K309h | 2 | 0 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 9 |
+| Leviathan35 | 0 | 1 | 2 | 0 | 2 | 1 | 1 | 1 | 1 | 3 | 3 | 1 | 1 | 0 | 2 | 0 | 0 | 19 |
+| StatutoryRaitests | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 2 | 1 | 1 | 0 | 0 | 2 | 2 | 0 | 0 | 12 |
+| Tedwood | 2 | 2 | 0 | 0 | 0 | 1 | 2 | 0 | 3 | 0 | 1 | 1 | 1 | 3 | 1 | 0 | 0 | 17 |
 | jacross2000 | 2 | 1 | 2 | 5 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 15 |
-| leejsv | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 2 | 1 | 0 | 1 | 2 | 1 | 1 | 0 | 0 | 0 | 13 |
+| leejsv | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 2 | 1 | 0 | 1 | 2 | 1 | 1 | 1 | 0 | 0 | 14 |
 | mavbenson | 0 | 1 | 1 | 0 | 0 | 1 | 2 | 2 | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 10 |
 | naveb | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 9 |
-| nlredfern | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 1 | 1 | 0 | 3 | 2 | 0 | 0 | 0 | 13 |
+| nlredfern | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 1 | 1 | 0 | 3 | 2 | 1 | 0 | 0 | 14 |
 
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | Leviathan35 | 17 |
-| 2 | Tedwood | 16 |
-| 3 | jacross2000 | 15 |
-| 4 | Franc19 | 15 |
-| 5 | leejsv | 13 |
-| 6 | nlredfern | 13 |
-| 7 | StatutoryRaitests | 10 |
+| 1 | Leviathan35 | 19 |
+| 2 | Tedwood | 17 |
+| 3 | Franc19 | 16 |
+| 4 | jacross2000 | 15 |
+| 5 | leejsv | 14 |
+| 6 | nlredfern | 14 |
+| 7 | StatutoryRaitests | 12 |
 | 8 | mavbenson | 10 |
-| 9 | naveb | 9 |
-| 10 | K309h | 8 |
+| 9 | K309h | 9 |
+| 10 | naveb | 9 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1

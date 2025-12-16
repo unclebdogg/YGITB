@@ -2044,17 +2044,124 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 19.6,
+          "player_id": "7567",
+          "player_name": "Kenneth Gainwell",
+          "position": "RB",
+          "team": "PIT"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "1135367736106127360",
+          "display_name": "K309h",
+          "team_name": "K309h",
+          "points": 26.2,
+          "player_id": "8183",
+          "player_name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 31.5,
+          "player_id": "7543",
+          "player_name": "Travis Etienne",
+          "position": "RB",
+          "team": "JAX"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "team_name": "leejsv",
+          "points": 41.4,
+          "player_id": "7547",
+          "player_name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "team": "DET"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 37.4,
+          "player_id": "8130",
+          "player_name": "Trey McBride",
+          "position": "TE",
+          "team": "ARI"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 10.0,
+          "player_id": "JAX",
+          "player_name": "JAX D/ST",
+          "position": "D/ST",
+          "team": "JAX"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 24.0,
+          "player_id": "2747",
+          "player_name": "Jason Myers",
+          "position": "K",
+          "team": "SEA"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 45.6,
+          "player_id": "7553",
+          "player_name": "Kyle Pitts",
+          "position": "TE",
+          "team": "ATL"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 79.18,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1260776369839673345": 2,
+      "1264547596043563008": 2,
+      "1135367736106127360": 1,
+      "1258237830732193792": 1,
+      "1264781179337322496": 1,
+      "1261179461810798592": 1,
+      "1261169947501920258": 1
+    }
   },
   "16": {
     "users": {
