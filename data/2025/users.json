@@ -3,7 +3,7 @@
     "avatar": "nfl_ne",
     "display_name": "naveb",
     "is_bot": null,
-    "is_owner": null,
+    "is_owner": false,
     "league_id": "1260643183704932352",
     "metadata": {
       "allow_pn": "on",
@@ -18,7 +18,7 @@
     "avatar": "a7edf17a1956ebe79017732156625301",
     "display_name": "mavbenson",
     "is_bot": false,
-    "is_owner": null,
+    "is_owner": false,
     "league_id": "1260643183704932352",
     "metadata": {
       "allow_pn": "on",
@@ -33,7 +33,7 @@
     "avatar": "4f4090e5e9c3941414db40a871e3e909",
     "display_name": "K309h",
     "is_bot": false,
-    "is_owner": true,
+    "is_owner": false,
     "league_id": "1260643183704932352",
     "metadata": {
       "allow_pn": "on",
@@ -47,7 +47,7 @@
     "avatar": "d55d1f7075eda01948318de4af616075",
     "display_name": "jacross2000",
     "is_bot": false,
-    "is_owner": null,
+    "is_owner": false,
     "league_id": "1260643183704932352",
     "metadata": {
       "allow_pn": "on",
@@ -61,7 +61,7 @@
     "avatar": "d55d1f7075eda01948318de4af616075",
     "display_name": "nlredfern",
     "is_bot": false,
-    "is_owner": null,
+    "is_owner": true,
     "league_id": "1260643183704932352",
     "metadata": {
       "allow_pn": "on",
@@ -75,7 +75,7 @@
     "avatar": "d22e52781a5d7a94bcbf2aa70e748382",
     "display_name": "Leviathan35",
     "is_bot": false,
-    "is_owner": null,
+    "is_owner": false,
     "league_id": "1260643183704932352",
     "metadata": {
       "allow_pn": "on",
@@ -90,7 +90,7 @@
     "avatar": "d55d1f7075eda01948318de4af616075",
     "display_name": "Tedwood",
     "is_bot": false,
-    "is_owner": null,
+    "is_owner": false,
     "league_id": "1260643183704932352",
     "metadata": {
       "allow_pn": "on",
@@ -104,7 +104,7 @@
     "avatar": "d22e52781a5d7a94bcbf2aa70e748382",
     "display_name": "Franc19",
     "is_bot": false,
-    "is_owner": null,
+    "is_owner": false,
     "league_id": "1260643183704932352",
     "metadata": {
       "allow_pn": "on",
@@ -118,7 +118,7 @@
     "avatar": "d55d1f7075eda01948318de4af616075",
     "display_name": "StatutoryRaitests",
     "is_bot": false,
-    "is_owner": null,
+    "is_owner": false,
     "league_id": "1260643183704932352",
     "metadata": {
       "allow_pn": "on",
@@ -131,7 +131,7 @@
     "avatar": "d22e52781a5d7a94bcbf2aa70e748382",
     "display_name": "leejsv",
     "is_bot": false,
-    "is_owner": null,
+    "is_owner": false,
     "league_id": "1260643183704932352",
     "metadata": {
       "allow_pn": "on",
