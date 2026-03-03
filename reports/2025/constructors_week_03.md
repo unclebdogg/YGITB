@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 3
-_Generated: 2026-02-24 23:35 UTC_
+_Generated: 2026-03-03 23:30 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -11,7 +11,7 @@ _Generated: 2026-02-24 23:35 UTC_
 | Top TE | leejsv | Jake Ferguson | TE | DAL | 21.2 |
 | Top D/ST | StatutoryRaitests | PIT D/ST | D/ST | PIT | 20.0 |
 | Top K | Franc19 | Chase McLaughlin | K | TB | 21.0 |
-| Top Bench | jacross2000 | David Montgomery | RB | DET | 29.4 |
+| Top Bench | jacross2000 | David Montgomery | RB | HOU | 29.4 |
 | Largest Winning Margin | Leviathan35 | — | — | — | 45.06 |
 
 ## Weekly Scoreboard
