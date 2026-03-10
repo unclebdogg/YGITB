@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 6
-_Generated: 2026-03-03 23:30 UTC_
+_Generated: 2026-03-10 23:30 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -43,10 +43,10 @@ _Generated: 2026-03-03 23:30 UTC_
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | Leviathan35 | 22 |
-| 2 | Franc19 | 19 |
-| 3 | Tedwood | 18 |
-| 4 | nlredfern | 18 |
+| 1 | Leviathan35 | 21 |
+| 2 | nlredfern | 19 |
+| 3 | Franc19 | 19 |
+| 4 | Tedwood | 18 |
 | 5 | jacross2000 | 17 |
 | 6 | leejsv | 14 |
 | 7 | K309h | 12 |

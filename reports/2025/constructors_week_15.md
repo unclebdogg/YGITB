@@ -1,12 +1,12 @@
 # Salt Shaker Constructors — Week 15
-_Generated: 2026-03-03 23:30 UTC_
+_Generated: 2026-03-10 23:30 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
 |---|---|---|---|---|---|
-| Best MNF Player | Leviathan35 | Kenneth Gainwell | RB | PIT | 19.6 |
+| Best MNF Player | nlredfern | De'Von Achane | RB | MIA | 18.7 |
 | Top QB | K309h | Brock Purdy | QB | SF | 26.2 |
-| Top RB | nlredfern | Travis Etienne | RB | JAX | 31.5 |
+| Top RB | nlredfern | Travis Etienne | RB | NO | 31.5 |
 | Top WR | leejsv | Amon-Ra St. Brown | WR | DET | 41.4 |
 | Top TE | Franc19 | Trey McBride | TE | ARI | 37.4 |
 | Top D/ST | Tedwood | JAX D/ST | D/ST | JAX | 10.0 |
@@ -17,35 +17,35 @@ _Generated: 2026-03-03 23:30 UTC_
 ## Weekly Scoreboard
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | Leviathan35 | 2 |
+| 1 | nlredfern | 2 |
 | 2 | StatutoryRaitests | 2 |
 | 3 | K309h | 1 |
-| 4 | nlredfern | 1 |
-| 5 | leejsv | 1 |
-| 6 | Franc19 | 1 |
-| 7 | Tedwood | 1 |
+| 4 | leejsv | 1 |
+| 5 | Franc19 | 1 |
+| 6 | Tedwood | 1 |
+| 7 | Leviathan35 | 1 |
 
 ## Week-by-Week Scoreboard
 | Manager | Wk 1 | Wk 2 | Wk 3 | Wk 4 | Wk 5 | Wk 6 | Wk 7 | Wk 8 | Wk 9 | Wk 10 | Wk 11 | Wk 12 | Wk 13 | Wk 14 | Wk 15 | Total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Franc19 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 0 | 2 | 1 | 3 | 0 | 0 | 1 | 16 |
 | K309h | 2 | 0 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 9 |
-| Leviathan35 | 0 | 1 | 2 | 0 | 2 | 1 | 1 | 1 | 1 | 3 | 3 | 1 | 1 | 0 | 2 | 19 |
+| Leviathan35 | 0 | 1 | 2 | 0 | 2 | 1 | 1 | 1 | 1 | 3 | 3 | 1 | 1 | 0 | 1 | 18 |
 | StatutoryRaitests | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 2 | 1 | 1 | 0 | 0 | 2 | 2 | 12 |
 | Tedwood | 2 | 2 | 0 | 0 | 0 | 1 | 2 | 0 | 3 | 0 | 1 | 1 | 1 | 3 | 1 | 17 |
 | jacross2000 | 2 | 1 | 2 | 5 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 15 |
 | leejsv | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 2 | 1 | 0 | 1 | 2 | 1 | 1 | 1 | 14 |
 | mavbenson | 0 | 1 | 1 | 0 | 0 | 1 | 2 | 2 | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 10 |
 | naveb | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 9 |
-| nlredfern | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 1 | 1 | 0 | 3 | 2 | 1 | 14 |
+| nlredfern | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 1 | 1 | 0 | 3 | 2 | 2 | 15 |
 
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | Leviathan35 | 22 |
-| 2 | Franc19 | 19 |
-| 3 | Tedwood | 18 |
-| 4 | nlredfern | 18 |
+| 1 | Leviathan35 | 21 |
+| 2 | nlredfern | 19 |
+| 3 | Franc19 | 19 |
+| 4 | Tedwood | 18 |
 | 5 | jacross2000 | 17 |
 | 6 | leejsv | 14 |
 | 7 | K309h | 12 |

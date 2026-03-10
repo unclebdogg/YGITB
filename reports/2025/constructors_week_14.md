@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 14
-_Generated: 2026-03-03 23:30 UTC_
+_Generated: 2026-03-10 23:30 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -8,7 +8,7 @@ _Generated: 2026-03-03 23:30 UTC_
 | Top QB | Tedwood | Josh Allen | QB | BUF | 37.84 |
 | Top RB | naveb | Jahmyr Gibbs | RB | DET | 37.0 |
 | Top WR | leejsv | Michael Wilson | WR | ARI | 37.2 |
-| Top TE | StatutoryRaitests | Dallas Goedert | TE | PHI | 15.8 |
+| Top TE | StatutoryRaitests | Dallas Goedert | TE |  | 15.8 |
 | Top D/ST | nlredfern | SEA D/ST | D/ST | SEA | 20.0 |
 | Top K | Tedwood | Brandon Aubrey | K | DAL | 24.0 |
 | Top Bench | Tedwood | Blake Corum | RB | LAR | 26.1 |
@@ -40,10 +40,10 @@ _Generated: 2026-03-03 23:30 UTC_
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | Leviathan35 | 22 |
-| 2 | Franc19 | 19 |
-| 3 | Tedwood | 18 |
-| 4 | nlredfern | 18 |
+| 1 | Leviathan35 | 21 |
+| 2 | nlredfern | 19 |
+| 3 | Franc19 | 19 |
+| 4 | Tedwood | 18 |
 | 5 | jacross2000 | 17 |
 | 6 | leejsv | 14 |
 | 7 | K309h | 12 |

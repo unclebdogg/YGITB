@@ -1,12 +1,12 @@
 # Salt Shaker Constructors — Week 5
-_Generated: 2026-03-03 23:30 UTC_
+_Generated: 2026-03-10 23:30 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
 |---|---|---|---|---|---|
 | Best MNF Player | jacross2000 | Patrick Mahomes | QB | KC | 26.72 |
 | Top QB | jacross2000 | Patrick Mahomes | QB | KC | 26.72 |
-| Top RB | Leviathan35 | Rico Dowdle | RB | CAR | 32.4 |
+| Top RB | Leviathan35 | Rico Dowdle | RB | PIT | 32.4 |
 | Top WR | naveb | Emeka Egbuka | WR | TB | 31.3 |
 | Top TE | leejsv | Jake Ferguson | TE | DAL | 23.9 |
 | Top D/ST | StatutoryRaitests | IND D/ST | D/ST | IND | 17.0 |
@@ -42,10 +42,10 @@ _Generated: 2026-03-03 23:30 UTC_
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | Leviathan35 | 22 |
-| 2 | Franc19 | 19 |
-| 3 | Tedwood | 18 |
-| 4 | nlredfern | 18 |
+| 1 | Leviathan35 | 21 |
+| 2 | nlredfern | 19 |
+| 3 | Franc19 | 19 |
+| 4 | Tedwood | 18 |
 | 5 | jacross2000 | 17 |
 | 6 | leejsv | 14 |
 | 7 | K309h | 12 |

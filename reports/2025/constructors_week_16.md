@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 16
-_Generated: 2026-03-03 23:30 UTC_
+_Generated: 2026-03-10 23:30 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -29,22 +29,22 @@ _Generated: 2026-03-03 23:30 UTC_
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Franc19 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 0 | 2 | 1 | 3 | 0 | 0 | 1 | 1 | 17 |
 | K309h | 2 | 0 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 1 | 10 |
-| Leviathan35 | 0 | 1 | 2 | 0 | 2 | 1 | 1 | 1 | 1 | 3 | 3 | 1 | 1 | 0 | 2 | 3 | 22 |
+| Leviathan35 | 0 | 1 | 2 | 0 | 2 | 1 | 1 | 1 | 1 | 3 | 3 | 1 | 1 | 0 | 1 | 3 | 21 |
 | StatutoryRaitests | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 2 | 1 | 1 | 0 | 0 | 2 | 2 | 0 | 12 |
 | Tedwood | 2 | 2 | 0 | 0 | 0 | 1 | 2 | 0 | 3 | 0 | 1 | 1 | 1 | 3 | 1 | 0 | 17 |
 | jacross2000 | 2 | 1 | 2 | 5 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 2 | 17 |
 | leejsv | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 2 | 1 | 0 | 1 | 2 | 1 | 1 | 1 | 0 | 14 |
 | mavbenson | 0 | 1 | 1 | 0 | 0 | 1 | 2 | 2 | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 11 |
 | naveb | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 10 |
-| nlredfern | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 1 | 1 | 0 | 3 | 2 | 1 | 0 | 14 |
+| nlredfern | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 1 | 1 | 0 | 3 | 2 | 2 | 0 | 15 |
 
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | Leviathan35 | 22 |
-| 2 | Franc19 | 19 |
-| 3 | Tedwood | 18 |
-| 4 | nlredfern | 18 |
+| 1 | Leviathan35 | 21 |
+| 2 | nlredfern | 19 |
+| 3 | Franc19 | 19 |
+| 4 | Tedwood | 18 |
 | 5 | jacross2000 | 17 |
 | 6 | leejsv | 14 |
 | 7 | K309h | 12 |

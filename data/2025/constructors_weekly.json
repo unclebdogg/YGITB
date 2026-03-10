@@ -634,7 +634,7 @@
           "player_id": "7021",
           "player_name": "Rico Dowdle",
           "position": "RB",
-          "team": "CAR"
+          "team": "PIT"
         }
       ],
       "top_wr": [
@@ -1958,7 +1958,7 @@
           "player_id": "5022",
           "player_name": "Dallas Goedert",
           "position": "TE",
-          "team": "PHI"
+          "team": ""
         }
       ],
       "top_dst": [
@@ -2046,14 +2046,14 @@
     "winners": {
       "mnf_best_player": [
         {
-          "user_id": "1260776369839673345",
-          "display_name": "Leviathan35",
-          "team_name": "Leviathan35",
-          "points": 19.6,
-          "player_id": "7567",
-          "player_name": "Kenneth Gainwell",
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 18.7,
+          "player_id": "9226",
+          "player_name": "De'Von Achane",
           "position": "RB",
-          "team": "PIT"
+          "team": "MIA"
         }
       ],
       "top_qb": [
@@ -2077,7 +2077,7 @@
           "player_id": "7543",
           "player_name": "Travis Etienne",
           "position": "RB",
-          "team": "JAX"
+          "team": "NO"
         }
       ],
       "top_wr": [
@@ -2154,13 +2154,13 @@
       ]
     },
     "weekly_points": {
-      "1260776369839673345": 2,
+      "1258237830732193792": 2,
       "1264547596043563008": 2,
       "1135367736106127360": 1,
-      "1258237830732193792": 1,
       "1264781179337322496": 1,
       "1261179461810798592": 1,
-      "1261169947501920258": 1
+      "1261169947501920258": 1,
+      "1260776369839673345": 1
     }
   },
   "16": {
