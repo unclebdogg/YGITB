@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 1
-_Generated: 2026-03-10 23:30 UTC_
+_Generated: 2026-03-17 23:35 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -11,7 +11,7 @@ _Generated: 2026-03-10 23:30 UTC_
 | Top TE | Tedwood | Brock Bowers | TE | LV | 15.3 |
 | Top D/ST | K309h | DEN D/ST | D/ST | DEN | 16.0 |
 | Top K | jacross2000 | Chris Boswell | K | PIT | 15.0 |
-| Top Bench | leejsv | Justin Fields | QB | NYJ | 29.52 |
+| Top Bench | leejsv | Justin Fields | QB | KC | 29.52 |
 | Largest Winning Margin | leejsv | — | — | — | 24.4 |
 
 ## Weekly Scoreboard
