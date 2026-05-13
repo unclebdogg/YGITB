@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 8
-_Generated: 2026-05-05 23:50 UTC_
+_Generated: 2026-05-13 00:01 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
