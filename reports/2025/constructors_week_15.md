@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 15
-_Generated: 2026-05-13 00:01 UTC_
+_Generated: 2026-05-20 00:08 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
