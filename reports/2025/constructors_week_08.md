@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 8
-_Generated: 2026-05-27 00:07 UTC_
+_Generated: 2026-06-03 01:40 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -41,14 +41,14 @@ _Generated: 2026-05-27 00:07 UTC_
 | Rank | Manager | Points |
 |---|---|---|
 | 1 | Leviathan35 | 21 |
-| 2 | nlredfern | 19 |
+| 2 | nlredfern | 20 |
 | 3 | Franc19 | 19 |
 | 4 | Tedwood | 18 |
 | 5 | jacross2000 | 17 |
 | 6 | leejsv | 14 |
 | 7 | K309h | 12 |
 | 8 | StatutoryRaitests | 12 |
-| 9 | mavbenson | 11 |
-| 10 | naveb | 10 |
+| 9 | naveb | 10 |
+| 10 | mavbenson | 10 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1

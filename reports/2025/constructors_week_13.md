@@ -1,13 +1,13 @@
 # Salt Shaker Constructors — Week 13
-_Generated: 2026-05-27 00:07 UTC_
+_Generated: 2026-06-03 01:40 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
 |---|---|---|---|---|---|
-| Best MNF Player | mavbenson | Drake Maye | QB | NE | 20.48 |
+| Best MNF Player | nlredfern | A.J. Brown | WR | NE | 35.2 |
 | Top QB | jacross2000 | Patrick Mahomes | QB | KC | 29.44 |
 | Top RB | nlredfern | Bijan Robinson | RB | ATL | 30.3 |
-| Top WR | nlredfern | A.J. Brown | WR | PHI | 35.2 |
+| Top WR | nlredfern | A.J. Brown | WR | NE | 35.2 |
 | Top TE | Tedwood | Brock Bowers | TE | LV | 22.3 |
 | Top D/ST | nlredfern | SEA D/ST | D/ST | SEA | 32.0 |
 | Top K | Leviathan35 | Jason Myers | K | SEA | 19.0 |
@@ -17,12 +17,11 @@ _Generated: 2026-05-27 00:07 UTC_
 ## Weekly Scoreboard
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | nlredfern | 3 |
+| 1 | nlredfern | 4 |
 | 2 | jacross2000 | 2 |
-| 3 | mavbenson | 1 |
-| 4 | Tedwood | 1 |
-| 5 | Leviathan35 | 1 |
-| 6 | leejsv | 1 |
+| 3 | Tedwood | 1 |
+| 4 | Leviathan35 | 1 |
+| 5 | leejsv | 1 |
 
 ## Week-by-Week Scoreboard
 | Manager | Wk 1 | Wk 2 | Wk 3 | Wk 4 | Wk 5 | Wk 6 | Wk 7 | Wk 8 | Wk 9 | Wk 10 | Wk 11 | Wk 12 | Wk 13 | Total |
@@ -34,22 +33,22 @@ _Generated: 2026-05-27 00:07 UTC_
 | Tedwood | 2 | 2 | 0 | 0 | 0 | 1 | 2 | 0 | 3 | 0 | 1 | 1 | 1 | 13 |
 | jacross2000 | 2 | 1 | 2 | 5 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 15 |
 | leejsv | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 2 | 1 | 0 | 1 | 2 | 1 | 12 |
-| mavbenson | 0 | 1 | 1 | 0 | 0 | 1 | 2 | 2 | 1 | 1 | 0 | 0 | 1 | 10 |
+| mavbenson | 0 | 1 | 1 | 0 | 0 | 1 | 2 | 2 | 1 | 1 | 0 | 0 | 0 | 9 |
 | naveb | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 8 |
-| nlredfern | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 1 | 1 | 0 | 3 | 11 |
+| nlredfern | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 1 | 1 | 0 | 4 | 12 |
 
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
 | 1 | Leviathan35 | 21 |
-| 2 | nlredfern | 19 |
+| 2 | nlredfern | 20 |
 | 3 | Franc19 | 19 |
 | 4 | Tedwood | 18 |
 | 5 | jacross2000 | 17 |
 | 6 | leejsv | 14 |
 | 7 | K309h | 12 |
 | 8 | StatutoryRaitests | 12 |
-| 9 | mavbenson | 11 |
-| 10 | naveb | 10 |
+| 9 | naveb | 10 |
+| 10 | mavbenson | 10 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1

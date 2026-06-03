@@ -1759,13 +1759,13 @@
     "winners": {
       "mnf_best_player": [
         {
-          "user_id": "474749566663520256",
-          "display_name": "mavbenson",
-          "team_name": "mavbenson",
-          "points": 20.48,
-          "player_id": "11564",
-          "player_name": "Drake Maye",
-          "position": "QB",
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 35.2,
+          "player_id": "5859",
+          "player_name": "A.J. Brown",
+          "position": "WR",
           "team": "NE"
         }
       ],
@@ -1802,7 +1802,7 @@
           "player_id": "5859",
           "player_name": "A.J. Brown",
           "position": "WR",
-          "team": "PHI"
+          "team": "NE"
         }
       ],
       "top_te": [
@@ -1867,9 +1867,8 @@
       ]
     },
     "weekly_points": {
-      "1258237830732193792": 3,
+      "1258237830732193792": 4,
       "1243751191691665408": 2,
-      "474749566663520256": 1,
       "1261169947501920258": 1,
       "1260776369839673345": 1,
       "1264781179337322496": 1
