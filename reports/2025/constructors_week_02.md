@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 2
-_Generated: 2026-06-24 00:00 UTC_
+_Generated: 2026-07-01 00:06 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
