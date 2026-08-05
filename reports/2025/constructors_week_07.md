@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 7
-_Generated: 2026-07-28 23:58 UTC_
+_Generated: 2026-08-05 00:04 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
