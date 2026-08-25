@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 6
-_Generated: 2026-08-18 23:23 UTC_
+_Generated: 2026-08-25 23:26 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -11,7 +11,7 @@ _Generated: 2026-08-18 23:23 UTC_
 | Top TE | Franc19 | Trey McBride | TE | ARI | 21.2 |
 | Top D/ST | Tedwood | LAR D/ST | D/ST | LAR | 19.0 |
 | Top K | mavbenson | Eddy Pineiro | K | SF | 18.0 |
-| Top Bench | K309h | Kayshon Boutte | WR | NE | 26.3 |
+| Top Bench | K309h | Kayshon Boutte | WR | HOU | 26.3 |
 | Largest Winning Margin | Leviathan35 | — | — | — | 50.78 |
 
 ## Weekly Scoreboard
