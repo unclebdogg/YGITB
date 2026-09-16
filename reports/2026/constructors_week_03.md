@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 3
-_Generated: 2026-09-16 00:44 UTC_
+_Generated: 2026-09-16 00:48 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -23,7 +23,7 @@ _Generated: 2026-09-16 00:44 UTC_
 |---|---|---|---|---|
 | Franc19 | 1 | 0 | 0 | 1 |
 | K309h | 1 | 0 | 0 | 1 |
-| jacross2000 | 1 | 0 | 0 | 1 |
+| jacross2000 | 2 | 0 | 0 | 2 |
 | mavbenson | 2 | 0 | 0 | 2 |
 | nlredfern | 3 | 0 | 0 | 3 |
 
@@ -31,9 +31,9 @@ _Generated: 2026-09-16 00:44 UTC_
 | Rank | Manager | Points |
 |---|---|---|
 | 1 | nlredfern | 3 |
-| 2 | mavbenson | 2 |
-| 3 | K309h | 1 |
-| 4 | Franc19 | 1 |
-| 5 | jacross2000 | 1 |
+| 2 | jacross2000 | 2 |
+| 3 | mavbenson | 2 |
+| 4 | K309h | 1 |
+| 5 | Franc19 | 1 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1

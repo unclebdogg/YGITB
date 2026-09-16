@@ -38,6 +38,12 @@ jobs:
           python -u scripts/sleeper_history.py
           python -u scripts/aggregate_stats.py
 
+      # 2b) Monday-night schedule (the Best MNF Player category needs it)
+      - name: MNF schedule
+        run: |
+          set -eux
+          python -u scripts/fetch_mnf_schedule.py
+
       # 3) Run Constructors / Salt Shaker scoring
       - name: Constructors Championship
         run: |
