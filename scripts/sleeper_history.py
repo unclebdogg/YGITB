@@ -2,7 +2,10 @@
 import json, os, time, urllib.request
 
 # ---------- CONFIG ----------
-LEAGUE_ID = "1260643183704932352"   # e.g. "1260643183704932352"
+# 2026 league. Override with LEAGUE_ID when running an older season.
+# The crawler walks previous_league_id backwards, so the CURRENT season must be
+# the starting point — pointing this at 2025 silently collects nothing newer.
+LEAGUE_ID = os.getenv("LEAGUE_ID", "1389344090209943552")
 SEASON_MAX_WEEKS = 17               # adjust to your league length
 OUTDIR = os.path.join(os.path.dirname(__file__), "..", "data")
 SLEEP_SEC = 0.25                    # be polite to the API
@@ -37,22 +40,22 @@ def write_json(path, obj):
 def main():
     leagues = crawl_league(LEAGUE_ID)  # newest -> oldest
     for lid in leagues:
-        league = get(f"https://api.sleeper.app/v1/league/1260643183704932352")
+        league = get(f"https://api.sleeper.app/v1/league/{lid}")
         season = league.get("season")
         season_dir = ensure_dir(os.path.join(OUTDIR, season))
 
         # Base metadata
         write_json(os.path.join(season_dir, "league.json"), league)
-        users = get(f"https://api.sleeper.app/v1/league/1260643183704932352/users")
+        users = get(f"https://api.sleeper.app/v1/league/{lid}/users")
         write_json(os.path.join(season_dir, "users.json"), users)
-        rosters = get(f"https://api.sleeper.app/v1/league/1260643183704932352/rosters")
+        rosters = get(f"https://api.sleeper.app/v1/league/{lid}/rosters")
         write_json(os.path.join(season_dir, "rosters.json"), rosters)
         time.sleep(SLEEP_SEC)
 
         # Week-by-week matchups
         for wk in range(1, SEASON_MAX_WEEKS + 1):
             try:
-                matchups = get(f"https://api.sleeper.app/v1/league/1260643183704932352/matchups/{wk}")
+                matchups = get(f"https://api.sleeper.app/v1/league/{lid}/matchups/{wk}")
                 write_json(os.path.join(season_dir, f"week_{wk:02d}_matchups.json"), matchups)
                 time.sleep(SLEEP_SEC)
             except Exception:

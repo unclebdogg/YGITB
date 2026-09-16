@@ -18,7 +18,7 @@ from datetime import datetime
 
 DATA_ROOT   = pathlib.Path("data")
 REPORT_ROOT = pathlib.Path("reports")
-SEASON      = os.getenv("SEASON", "2025")
+SEASON      = os.getenv("SEASON", "2026")
 
 WEEKLY_FILE    = DATA_ROOT / SEASON / "constructors_weekly.json"
 STANDINGS_FILE = DATA_ROOT / "constructors_standings.json"

@@ -31,7 +31,7 @@ from pathlib import Path
 from collections import defaultdict
 
 # ---------- Config ----------
-SEASON = os.getenv("SEASON", "2025")
+SEASON = os.getenv("SEASON", "2026")
 POINTS_CONFIG = {
     "mnf_best_player": int(os.getenv("PTS_MNF", "1")),
     "top_qb":          int(os.getenv("PTS_QB", "1")),
