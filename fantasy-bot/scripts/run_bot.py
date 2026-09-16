@@ -80,6 +80,14 @@ def resolve_week_for(kind: str) -> int:
     return week if kind == "preview" else max(1, week - 1)
 
 
+def resolve_season() -> str:
+    """The NFL season these reports belong to — NFL_SEASON, else Sleeper state."""
+    env = get_env("NFL_SEASON", "")
+    if env:
+        return str(env)
+    return str(get_state().get("season") or datetime.now().year)
+
+
 # ----------------------------
 # Prompt assembly
 # ----------------------------
@@ -280,6 +288,15 @@ def main(kind: str):
 
     # Sleeper data
     week = resolve_week_for(kind)
+    season = resolve_season()
+
+    # Idempotency BEFORE the paid LLM call (this used to generate the report, then
+    # throw it away — a wasted OpenAI call on every duplicate cron).
+    already = output_path(output_dir, kind, week, season)
+    if os.path.exists(already) and os.path.getsize(already) > 0:
+        print(f"{kind.title()} already exists for {season} week {week} at {already}; skipping.")
+        return
+
     league = get_league(league_id)
     users = get_users(league_id)
     rosters = get_rosters(league_id)
@@ -309,14 +326,8 @@ def main(kind: str):
     else:
         md = md_recap_from_json(week, data, start_d, end_d)
 
-    # Idempotency: skip if already exists (handles dual UTC crons around DST)
-    already = output_path(output_dir, kind, week)
-    if os.path.exists(already) and os.path.getsize(already) > 0:
-        print(f"{kind.title()} already exists for week {week} at {already}; skipping.")
-        return
-
     # Write
-    path = write_report(output_dir, kind, week, md)
+    path = write_report(output_dir, kind, week, md, season)
     print(f"Wrote {path}")
 
 
