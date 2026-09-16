@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import time
 import json
 import requests
 from datetime import datetime, timedelta
@@ -38,9 +39,18 @@ def openai_chat(model, system, user, temperature=0.6, max_tokens=2000, api_key=N
         "temperature": float(temperature),
         "max_tokens": int(max_tokens),
     }
-    r = requests.post(OPENAI_CHAT_URL, headers=headers, json=payload, timeout=120)
-    r.raise_for_status()
-    return r.json()["choices"][0]["message"]["content"].strip()
+    # A single transient 5xx used to fail the whole weekly run and skip the week
+    # (OpenAI returned 530 on 16 Sep). Retry a few times before giving up.
+    last = None
+    for attempt in range(1, 4):
+        r = requests.post(OPENAI_CHAT_URL, headers=headers, json=payload, timeout=120)
+        if r.status_code < 500:
+            r.raise_for_status()
+            return r.json()["choices"][0]["message"]["content"].strip()
+        last = f"{r.status_code} {r.text[:200]}"
+        print(f"[llm] attempt {attempt}/3 failed: {last}")
+        time.sleep(5 * attempt)
+    raise SystemExit(f"OpenAI failed after 3 attempts: {last}")
 
 
 def parse_json_or_die(text: str):
