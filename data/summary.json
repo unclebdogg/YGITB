@@ -597,6 +597,597 @@
           "points": 148.88
         }
       ]
+    },
+    "2026": {
+      "head_to_head": {
+        "K309h": {
+          "naveb": 2,
+          "leejsv": 2,
+          "nlredfern": 2,
+          "mavbenson": 2,
+          "Leviathan35": 2,
+          "jacross2000": 2,
+          "Tedwood": 2,
+          "Franc19": 2,
+          "StatutoryRaitests": 1
+        },
+        "jacross2000": {
+          "Franc19": 2,
+          "StatutoryRaitests": 2,
+          "leejsv": 2,
+          "nlredfern": 2,
+          "Leviathan35": 2,
+          "mavbenson": 2,
+          "Tedwood": 1
+        },
+        "mavbenson": {
+          "Tedwood": 2,
+          "nlredfern": 2,
+          "Franc19": 2,
+          "StatutoryRaitests": 2,
+          "Leviathan35": 2,
+          "leejsv": 1
+        },
+        "Leviathan35": {
+          "StatutoryRaitests": 2,
+          "leejsv": 2,
+          "nlredfern": 2,
+          "Tedwood": 2,
+          "Franc19": 1
+        },
+        "nlredfern": {
+          "leejsv": 2,
+          "Tedwood": 2,
+          "Franc19": 2,
+          "StatutoryRaitests": 2
+        },
+        "naveb": {
+          "Leviathan35": 2,
+          "jacross2000": 2,
+          "Tedwood": 2,
+          "Franc19": 2,
+          "StatutoryRaitests": 2,
+          "mavbenson": 2,
+          "leejsv": 2,
+          "nlredfern": 1
+        },
+        "Tedwood": {
+          "Franc19": 2,
+          "StatutoryRaitests": 2,
+          "leejsv": 2
+        },
+        "Franc19": {
+          "StatutoryRaitests": 2,
+          "leejsv": 2
+        },
+        "StatutoryRaitests": {
+          "leejsv": 2
+        }
+      },
+      "team_points": {
+        "K309h": 127.96,
+        "naveb": 124.26,
+        "jacross2000": 156.52,
+        "Franc19": 77.7,
+        "mavbenson": 145.0,
+        "Tedwood": 100.46,
+        "Leviathan35": 141.0,
+        "StatutoryRaitests": 81.86,
+        "nlredfern": 201.36,
+        "leejsv": 130.52
+      },
+      "weekly_highs": [
+        {
+          "season": "2026",
+          "week": "01",
+          "team": "K309h",
+          "points": 127.96
+        },
+        {
+          "season": "2026",
+          "week": "01",
+          "team": "jacross2000",
+          "points": 156.52
+        },
+        {
+          "season": "2026",
+          "week": "01",
+          "team": "mavbenson",
+          "points": 145.0
+        },
+        {
+          "season": "2026",
+          "week": "01",
+          "team": "Leviathan35",
+          "points": 141.0
+        },
+        {
+          "season": "2026",
+          "week": "01",
+          "team": "nlredfern",
+          "points": 201.36
+        },
+        {
+          "season": "2026",
+          "week": "02",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "02",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "02",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "02",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "02",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "03",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "03",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "03",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "03",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "03",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "04",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "04",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "04",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "04",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "04",
+          "team": "Franc19",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "05",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "05",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "05",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "05",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "05",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "06",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "06",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "06",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "06",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "06",
+          "team": "Franc19",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "07",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "07",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "07",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "07",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "07",
+          "team": "StatutoryRaitests",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "08",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "08",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "08",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "08",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "08",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "09",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "09",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "09",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "09",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "09",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "10",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "10",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "10",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "10",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "10",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "11",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "11",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "11",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "11",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "11",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "12",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "12",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "12",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "12",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "12",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "13",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "13",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "13",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "13",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "13",
+          "team": "Franc19",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "14",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "14",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "14",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "14",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "14",
+          "team": "Tedwood",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "15",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "15",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "15",
+          "team": "mavbenson",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "15",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "15",
+          "team": "Franc19",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "16",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "16",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "16",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "16",
+          "team": "nlredfern",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "16",
+          "team": "StatutoryRaitests",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "17",
+          "team": "K309h",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "17",
+          "team": "naveb",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "17",
+          "team": "jacross2000",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "17",
+          "team": "Leviathan35",
+          "points": 0.0
+        },
+        {
+          "season": "2026",
+          "week": "17",
+          "team": "nlredfern",
+          "points": 0.0
+        }
+      ]
     }
   },
   "all_time": {
@@ -604,18 +1195,24 @@
       "jacross2000": {
         "K309h": 1,
         "naveb": 2,
-        "StatutoryRaitests": 2,
-        "leejsv": 1,
-        "mavbenson": 1,
-        "Tedwood": 1
+        "StatutoryRaitests": 4,
+        "leejsv": 3,
+        "mavbenson": 3,
+        "Tedwood": 2,
+        "Franc19": 2,
+        "nlredfern": 2,
+        "Leviathan35": 2
       },
       "naveb": {
-        "StatutoryRaitests": 1,
-        "Tedwood": 2,
-        "Leviathan35": 1,
-        "mavbenson": 1,
-        "leejsv": 1,
-        "K309h": 1
+        "StatutoryRaitests": 3,
+        "Tedwood": 4,
+        "Leviathan35": 3,
+        "mavbenson": 3,
+        "leejsv": 3,
+        "K309h": 1,
+        "jacross2000": 2,
+        "Franc19": 2,
+        "nlredfern": 1
       },
       "leejsv": {
         "mavbenson": 1,
@@ -625,78 +1222,90 @@
         "StatutoryRaitests": 1
       },
       "Leviathan35": {
-        "Franc19": 2,
+        "Franc19": 3,
         "K309h": 2,
         "jacross2000": 2,
-        "Tedwood": 1,
-        "leejsv": 1,
-        "StatutoryRaitests": 1,
-        "nlredfern": 1,
+        "Tedwood": 3,
+        "leejsv": 3,
+        "StatutoryRaitests": 3,
+        "nlredfern": 3,
         "mavbenson": 1
       },
       "Tedwood": {
         "nlredfern": 1,
-        "StatutoryRaitests": 2,
+        "StatutoryRaitests": 4,
         "jacross2000": 1,
-        "leejsv": 1,
+        "leejsv": 3,
         "K309h": 1,
-        "Franc19": 1,
+        "Franc19": 3,
         "Leviathan35": 1
       },
       "mavbenson": {
         "naveb": 1,
         "K309h": 1,
-        "Franc19": 2,
-        "Leviathan35": 1,
-        "Tedwood": 2,
-        "leejsv": 1,
-        "StatutoryRaitests": 1
+        "Franc19": 4,
+        "Leviathan35": 3,
+        "Tedwood": 4,
+        "leejsv": 2,
+        "StatutoryRaitests": 3,
+        "nlredfern": 2
       },
       "Franc19": {
         "jacross2000": 3,
         "K309h": 2,
         "Tedwood": 1,
-        "StatutoryRaitests": 1,
+        "StatutoryRaitests": 3,
         "naveb": 1,
-        "leejsv": 1
+        "leejsv": 3
       },
       "nlredfern": {
-        "leejsv": 1,
+        "leejsv": 3,
         "mavbenson": 2,
         "Leviathan35": 3,
-        "Franc19": 3,
+        "Franc19": 5,
         "naveb": 1,
         "jacross2000": 1,
         "K309h": 1,
-        "Tedwood": 1
+        "Tedwood": 3,
+        "StatutoryRaitests": 2
       },
       "StatutoryRaitests": {
-        "leejsv": 2,
+        "leejsv": 4,
         "mavbenson": 1,
         "nlredfern": 1,
         "naveb": 2
       },
       "K309h": {
-        "StatutoryRaitests": 1,
-        "naveb": 2,
-        "jacross2000": 1,
-        "leejsv": 1,
-        "mavbenson": 1
+        "StatutoryRaitests": 2,
+        "naveb": 4,
+        "jacross2000": 3,
+        "leejsv": 3,
+        "mavbenson": 3,
+        "nlredfern": 2,
+        "Leviathan35": 2,
+        "Tedwood": 2,
+        "Franc19": 2
       }
     },
     "team_points": {
-      "K309h": 2118.08,
-      "jacross2000": 2014.52,
-      "naveb": 2042.76,
-      "StatutoryRaitests": 1949.4000000000003,
-      "mavbenson": 1980.9999999999998,
-      "leejsv": 1967.14,
-      "Leviathan35": 2251.0400000000004,
-      "Franc19": 1930.76,
-      "nlredfern": 2254.1,
-      "Tedwood": 1931.2400000000002
+      "K309h": 2246.04,
+      "jacross2000": 2171.04,
+      "naveb": 2167.02,
+      "StatutoryRaitests": 2031.2600000000002,
+      "mavbenson": 2126.0,
+      "leejsv": 2097.6600000000003,
+      "Leviathan35": 2392.0400000000004,
+      "Franc19": 2008.46,
+      "nlredfern": 2455.46,
+      "Tedwood": 2031.7000000000003
     },
     "weekly_highs": [
+      {
+        "season": "2026",
+        "week": "01",
+        "team": "nlredfern",
+        "points": 201.36
+      },
       {
         "season": "2025",
         "week": "04",
@@ -776,6 +1385,12 @@
         "points": 161.36
       },
       {
+        "season": "2026",
+        "week": "01",
+        "team": "jacross2000",
+        "points": 156.52
+      },
+      {
         "season": "2025",
         "week": "09",
         "team": "Tedwood",
@@ -848,6 +1463,12 @@
         "points": 145.62
       },
       {
+        "season": "2026",
+        "week": "01",
+        "team": "mavbenson",
+        "points": 145.0
+      },
+      {
         "season": "2025",
         "week": "10",
         "team": "K309h",
@@ -882,6 +1503,12 @@
         "week": "14",
         "team": "nlredfern",
         "points": 142.14
+      },
+      {
+        "season": "2026",
+        "week": "01",
+        "team": "Leviathan35",
+        "points": 141.0
       },
       {
         "season": "2025",
@@ -1002,6 +1629,12 @@
         "week": "07",
         "team": "nlredfern",
         "points": 128.26
+      },
+      {
+        "season": "2026",
+        "week": "01",
+        "team": "K309h",
+        "points": 127.96
       },
       {
         "season": "2025",
@@ -1194,6 +1827,486 @@
         "week": "11",
         "team": "Franc19",
         "points": 89.3
+      },
+      {
+        "season": "2026",
+        "week": "02",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "02",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "02",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "02",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "02",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "03",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "03",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "03",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "03",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "03",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "04",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "04",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "04",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "04",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "04",
+        "team": "Franc19",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "05",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "05",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "05",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "05",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "05",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "06",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "06",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "06",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "06",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "06",
+        "team": "Franc19",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "07",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "07",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "07",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "07",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "07",
+        "team": "StatutoryRaitests",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "08",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "08",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "08",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "08",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "08",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "09",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "09",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "09",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "09",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "09",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "10",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "10",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "10",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "10",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "10",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "11",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "11",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "11",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "11",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "11",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "12",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "12",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "12",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "12",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "12",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "13",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "13",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "13",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "13",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "13",
+        "team": "Franc19",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "14",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "14",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "14",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "14",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "14",
+        "team": "Tedwood",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "15",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "15",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "15",
+        "team": "mavbenson",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "15",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "15",
+        "team": "Franc19",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "16",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "16",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "16",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "16",
+        "team": "nlredfern",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "16",
+        "team": "StatutoryRaitests",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "17",
+        "team": "K309h",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "17",
+        "team": "naveb",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "17",
+        "team": "jacross2000",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "17",
+        "team": "Leviathan35",
+        "points": 0.0
+      },
+      {
+        "season": "2026",
+        "week": "17",
+        "team": "nlredfern",
+        "points": 0.0
       }
     ]
   }
