@@ -168,17 +168,123 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "1135367736106127360",
+          "display_name": "K309h",
+          "team_name": "K309h",
+          "points": 39.5,
+          "player_id": "2133",
+          "player_name": "Davante Adams",
+          "position": "WR",
+          "team": "LAR"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "474749566663520256",
+          "display_name": "mavbenson",
+          "team_name": "mavbenson",
+          "points": 29.76,
+          "player_id": "3294",
+          "player_name": "Dak Prescott",
+          "position": "QB",
+          "team": "DAL"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 29.2,
+          "player_id": "6813",
+          "player_name": "Jonathan Taylor",
+          "position": "RB",
+          "team": "IND"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1258237830732193792",
+          "display_name": "nlredfern",
+          "team_name": "nlredfern",
+          "points": 42.5,
+          "player_id": "9488",
+          "player_name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "team": "SEA"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1264781179337322496",
+          "display_name": "leejsv",
+          "team_name": "leejsv",
+          "points": 18.1,
+          "player_id": "8130",
+          "player_name": "Trey McBride",
+          "position": "TE",
+          "team": "ARI"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1135367736106127360",
+          "display_name": "K309h",
+          "team_name": "K309h",
+          "points": 12.0,
+          "player_id": "LAR",
+          "player_name": "LAR D/ST",
+          "position": "D/ST",
+          "team": "LAR"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 17.0,
+          "player_id": "11533",
+          "player_name": "Brandon Aubrey",
+          "position": "K",
+          "team": "DAL"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 40.82,
+          "player_id": "4984",
+          "player_name": "Josh Allen",
+          "position": "QB",
+          "team": "BUF"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "474749566663520256",
+          "display_name": "mavbenson",
+          "team_name": "mavbenson",
+          "points": 28.24,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1135367736106127360": 2,
+      "474749566663520256": 2,
+      "1261179461810798592": 2,
+      "1258237830732193792": 1,
+      "1264781179337322496": 1,
+      "1261169947501920258": 1
+    }
   },
   "3": {
     "users": {
