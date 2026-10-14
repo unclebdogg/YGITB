@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 14
-_Generated: 2026-10-07 02:09 UTC_
+_Generated: 2026-10-14 01:40 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -23,27 +23,27 @@ _Generated: 2026-10-07 02:09 UTC_
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Franc19 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 |
 | K309h | 1 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
-| Leviathan35 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
+| Leviathan35 | 0 | 0 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 |
 | StatutoryRaitests | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 |
-| Tedwood | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
-| jacross2000 | 2 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 |
-| leejsv | 0 | 1 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 |
+| Tedwood | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
+| jacross2000 | 2 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| leejsv | 0 | 1 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
 | mavbenson | 2 | 2 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7 |
-| naveb | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
-| nlredfern | 3 | 1 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7 |
+| naveb | 0 | 0 | 1 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 |
+| nlredfern | 3 | 1 | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 8 |
 
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | nlredfern | 7 |
+| 1 | nlredfern | 8 |
 | 2 | mavbenson | 7 |
-| 3 | K309h | 5 |
-| 4 | jacross2000 | 4 |
-| 5 | Franc19 | 3 |
-| 6 | leejsv | 3 |
-| 7 | StatutoryRaitests | 3 |
-| 8 | Leviathan35 | 2 |
-| 9 | Tedwood | 1 |
-| 10 | naveb | 1 |
+| 3 | jacross2000 | 5 |
+| 4 | K309h | 5 |
+| 5 | leejsv | 5 |
+| 6 | naveb | 4 |
+| 7 | Franc19 | 3 |
+| 8 | Leviathan35 | 3 |
+| 9 | StatutoryRaitests | 3 |
+| 10 | Tedwood | 2 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1
