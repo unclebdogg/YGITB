@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 3
-_Generated: 2026-10-14 01:40 UTC_
+_Generated: 2026-10-21 01:22 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -40,14 +40,14 @@ _Generated: 2026-10-14 01:40 UTC_
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | nlredfern | 8 |
-| 2 | mavbenson | 7 |
-| 3 | jacross2000 | 5 |
-| 4 | K309h | 5 |
-| 5 | leejsv | 5 |
-| 6 | naveb | 4 |
-| 7 | Franc19 | 3 |
-| 8 | Leviathan35 | 3 |
+| 1 | nlredfern | 9 |
+| 2 | jacross2000 | 8 |
+| 3 | mavbenson | 7 |
+| 4 | Leviathan35 | 7 |
+| 5 | K309h | 5 |
+| 6 | leejsv | 5 |
+| 7 | Franc19 | 4 |
+| 8 | naveb | 4 |
 | 9 | StatutoryRaitests | 3 |
 | 10 | Tedwood | 2 |
 
