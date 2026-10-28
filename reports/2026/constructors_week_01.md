@@ -1,10 +1,10 @@
 # Salt Shaker Constructors — Week 1
-_Generated: 2026-10-21 01:22 UTC_
+_Generated: 2026-10-28 02:02 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
 |---|---|---|---|---|---|
-| Best MNF Player | jacross2000 | Kenneth Walker | RB | KC | 34.1 |
+| Best MNF Player | jacross2000 | Kenneth Walker III | RB | KC | 34.1 |
 | Top QB | nlredfern | Caleb Williams | QB | CHI | 37.26 |
 | Top RB | mavbenson | Derrick Henry | RB | BAL | 35.3 |
 | Top WR | nlredfern | Justin Jefferson | WR | MIN | 31.2 |
@@ -35,15 +35,15 @@ _Generated: 2026-10-21 01:22 UTC_
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | nlredfern | 9 |
+| 1 | nlredfern | 11 |
 | 2 | jacross2000 | 8 |
 | 3 | mavbenson | 7 |
-| 4 | Leviathan35 | 7 |
-| 5 | K309h | 5 |
-| 6 | leejsv | 5 |
-| 7 | Franc19 | 4 |
-| 8 | naveb | 4 |
-| 9 | StatutoryRaitests | 3 |
-| 10 | Tedwood | 2 |
+| 4 | leejsv | 7 |
+| 5 | Leviathan35 | 7 |
+| 6 | K309h | 5 |
+| 7 | Franc19 | 5 |
+| 8 | Tedwood | 5 |
+| 9 | naveb | 4 |
+| 10 | StatutoryRaitests | 4 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1
