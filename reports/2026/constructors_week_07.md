@@ -1,5 +1,5 @@
 # Salt Shaker Constructors — Week 7
-_Generated: 2026-10-28 02:02 UTC_
+_Generated: 2026-11-04 02:56 UTC_
 
 ## Weekly Category Winners
 | Category | Manager | Player | Pos | Team | Pts |
@@ -12,7 +12,7 @@ _Generated: 2026-10-28 02:02 UTC_
 | Top D/ST | leejsv | SEA D/ST | D/ST | SEA | 11.0 |
 | Top K | Tedwood | Brandon Aubrey | K | DAL | 14.0 |
 | Top Bench | nlredfern | Tony Pollard | RB | TEN | 36.5 |
-| Largest Winning Margin | Tedwood | — | — | — | 70.46 |
+| Largest Winning Margin | Tedwood | — | — | — | 71.46 |
 
 ## Weekly Scoreboard
 | Rank | Manager | Points |
@@ -40,15 +40,15 @@ _Generated: 2026-10-28 02:02 UTC_
 ## Constructors Standings (Cumulative)
 | Rank | Manager | Points |
 |---|---|---|
-| 1 | nlredfern | 11 |
-| 2 | jacross2000 | 8 |
-| 3 | mavbenson | 7 |
-| 4 | leejsv | 7 |
-| 5 | Leviathan35 | 7 |
-| 6 | K309h | 5 |
-| 7 | Franc19 | 5 |
-| 8 | Tedwood | 5 |
-| 9 | naveb | 4 |
-| 10 | StatutoryRaitests | 4 |
+| 1 | nlredfern | 12 |
+| 2 | mavbenson | 11 |
+| 3 | jacross2000 | 8 |
+| 4 | Leviathan35 | 8 |
+| 5 | leejsv | 7 |
+| 6 | K309h | 6 |
+| 7 | Tedwood | 6 |
+| 8 | Franc19 | 5 |
+| 9 | StatutoryRaitests | 5 |
+| 10 | naveb | 4 |
 
 _Scoring config:_ mnf_best_player:1, top_qb:1, top_rb:1, top_wr:1, top_te:1, top_dst:1, top_k:1, top_bench:1, largest_diff:1
