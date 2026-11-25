@@ -1460,17 +1460,123 @@
       "1264781179337322496": "leejsv"
     },
     "winners": {
-      "mnf_best_player": [],
-      "top_qb": [],
-      "top_rb": [],
-      "top_wr": [],
-      "top_te": [],
-      "top_dst": [],
-      "top_k": [],
-      "top_bench": [],
-      "largest_diff": []
+      "mnf_best_player": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 19.9,
+          "player_id": "6770",
+          "player_name": "Joe Burrow",
+          "position": "QB",
+          "team": "CIN"
+        }
+      ],
+      "top_qb": [
+        {
+          "user_id": "474749566663520256",
+          "display_name": "mavbenson",
+          "team_name": "mavbenson",
+          "points": 35.9,
+          "player_id": "3294",
+          "player_name": "Dak Prescott",
+          "position": "QB",
+          "team": "DAL"
+        }
+      ],
+      "top_rb": [
+        {
+          "user_id": "1260776369839673345",
+          "display_name": "Leviathan35",
+          "team_name": "Leviathan35",
+          "points": 34.9,
+          "player_id": "13345",
+          "player_name": "Jonah Coleman",
+          "position": "RB",
+          "team": "DEN"
+        }
+      ],
+      "top_wr": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 30.2,
+          "player_id": "6786",
+          "player_name": "CeeDee Lamb",
+          "position": "WR",
+          "team": "DAL"
+        }
+      ],
+      "top_te": [
+        {
+          "user_id": "1264547596043563008",
+          "display_name": "StatutoryRaitests",
+          "team_name": "StatutoryRaitests",
+          "points": 18.4,
+          "player_id": "4217",
+          "player_name": "George Kittle",
+          "position": "TE",
+          "team": "SF"
+        }
+      ],
+      "top_dst": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 17.0,
+          "player_id": "CHI",
+          "player_name": "CHI D/ST",
+          "position": "D/ST",
+          "team": "CHI"
+        }
+      ],
+      "top_k": [
+        {
+          "user_id": "1261179461810798592",
+          "display_name": "Franc19",
+          "team_name": "Franc19",
+          "points": 18.0,
+          "player_id": "7042",
+          "player_name": "Tyler Bass",
+          "position": "K",
+          "team": "BUF"
+        }
+      ],
+      "top_bench": [
+        {
+          "user_id": "1243751191691665408",
+          "display_name": "jacross2000",
+          "team_name": "jacross2000",
+          "points": 25.4,
+          "player_id": "1466",
+          "player_name": "Travis Kelce",
+          "position": "TE",
+          "team": "KC"
+        }
+      ],
+      "largest_diff": [
+        {
+          "user_id": "1261169947501920258",
+          "display_name": "Tedwood",
+          "team_name": "Tedwood",
+          "points": 75.1,
+          "player_id": "",
+          "player_name": "",
+          "position": "",
+          "team": ""
+        }
+      ]
     },
-    "weekly_points": {}
+    "weekly_points": {
+      "1261169947501920258": 3,
+      "1264547596043563008": 2,
+      "474749566663520256": 1,
+      "1260776369839673345": 1,
+      "1261179461810798592": 1,
+      "1243751191691665408": 1
+    }
   },
   "12": {
     "users": {
